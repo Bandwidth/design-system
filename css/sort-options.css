@@ -1,0 +1,33 @@
+@import url('radio-groups.css');
+
+.sort div.radio-group.direction {
+    margin-right: 0;
+    margin-bottom: var(--m);
+}
+.sort div.radio-group.direction.vertical {
+    width: calc(4em + 2px);
+    margin-right: var(--m);
+    margin-bottom: 0;
+    float: left;
+}
+.sort div.radio-group.direction input[type="radio"]:empty ~ label {
+    padding: .5em var(--xs);
+    width: 4em;
+}
+.sort div.radio-group.direction input[type="radio"]:empty ~ label span {
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-align: center;
+    text-transform: none;
+    margin-right: 1em;
+    display: block;
+}
+.sort div.radio-group.direction input[type="radio"] + label:before {
+    content: '\f17d';
+    font-family: Bandwidth;
+    font-size: 1.5em;
+    position: absolute;
+    right: 0;
+    top: .5em;
+}

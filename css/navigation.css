@@ -1,0 +1,259 @@
+header {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    padding: var(--l);
+    width: 100%;
+    display: table;
+}
+header nav {
+    float: right;
+}
+header a {
+    color: var(--med-grey);
+}
+header a:after,
+#secondary a:after {
+    display: none;
+}
+a#logo {
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    display: inline-block;
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+a#logo img {
+    width: 143px;
+    height: 30px;
+    vertical-align: top;
+}
+a#logo span {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 30px;
+    border-left: 1px solid;
+    margin-left: var(--s);
+    padding-left: var(--s);
+    height: 30px;
+    display: inline-block;
+}
+a#logo:active {
+    opacity: 0.7;
+}
+#mobile-menu {
+    color: var(--med-grey);
+    line-height: 30px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#mobile-menu span {
+    transition: all 0.2s ease;
+}
+#mobile-menu i {
+    font-size: 29px;
+    margin-left: var(--m);
+    vertical-align: middle;
+}
+#logo-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+#nav-wrap {
+    display: table-cell;
+    vertical-align: bottom;
+}
+nav {
+    margin-bottom: var(--m);
+    clear: both;
+    transition: opacity 0.2s ease;
+}
+nav a {
+    border: 0;
+    margin-right: var(--l);
+    padding: 0;
+    display: inline-block;
+    opacity: 1;
+    transition: all 0.2s ease;
+    position: relative;
+}
+nav a:hover {
+    padding: 0;
+}
+nav a:active {
+    opacity: 0.7;
+}
+nav:last-of-type,
+nav a:last-of-type {
+    margin: 0 !important;
+}
+nav a:before {
+    content: "";
+    background: var(--bw-blue);
+    width: 104%;
+    height: 0;
+    display: block;
+    position: absolute;
+    bottom: calc(-1 * var(--l));
+    left: -2%;
+    cursor: default;
+    pointer-events: none;
+    opacity: 1;
+    transition: height 0.2s ease, opacity 0.2s ease;
+}
+nav a:hover:before,
+nav a.active:before {
+    height: 5px;
+}
+nav a:not(.active):before {
+    opacity: 0.25;
+}
+nav#utility {
+    font-size: 0.8em;
+}
+nav#utility a,
+nav#primary a {
+    color: var(--med-grey);
+    border: 0;
+}
+nav#utility a:before {
+    top: 2.2em;
+    bottom: auto;
+}
+nav a.has-secondary i,
+.secondary {
+    display: none;
+}
+nav#secondary {
+    background: #f7f7f7;
+    border-bottom: var(--input-border);
+    padding: var(--l);
+    width: 100%;
+}
+nav#secondary a {
+    color: var(--med-grey);
+    border: 0;
+}
+nav#secondary a.active {
+    color: var(--bw-blue);
+}
+nav#secondary a:before {
+    background: var(--bw-dark-blue);
+}
+section#main.sidebar {
+    display: table;
+    width: 100%;
+}
+section#main.sidebar nav#secondary,
+section#main.sidebar #main-content {
+    display: table-cell;
+}
+section#main.sidebar nav#secondary {
+    border-bottom: 0;
+    border-right: var(--input-border);
+    width: 300px;
+}
+section#main.sidebar nav#secondary a {
+    margin-right: 0;
+    margin-bottom: var(--s);
+    display: block;
+}
+section#main.sidebar nav#secondary a:before {
+    width: 0;
+    height: calc(100% + var(--s));
+    bottom: calc(-1 * var(--s) / 2);
+    left: calc(-1 * var(--l));
+    transition: width 0.2s ease, opacity 0.2s ease;
+}
+section#main.sidebar nav#secondary a:hover:before,
+section#main.sidebar nav#secondary a.active:before {
+    width: 5px;
+}
+
+@media all and (max-width:999px) {
+    #mobile-menu {
+        display: block;
+    }
+    #logo-wrap,
+    #nav-wrap {
+        display: block;
+    }
+    #nav-wrap {
+        margin-top: var(--l);
+        display: none;
+    }
+    #nav-wrap nav {
+        opacity: 0;
+    }
+    header nav {
+        float: none;
+        margin-bottom: var(--m);
+    }
+    nav#utility {
+        font-size: 1em;
+        border-top: 1px solid rgba(0, 0, 0, .12);
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        padding: var(--m) 0;
+    }
+    nav#utility a,
+    nav#primary a {
+        margin-right: 0;
+        margin-bottom: var(--s);
+        display: block;
+    }
+    nav > a.has-secondary {
+        margin-bottom: var(--s) !important;
+    }
+    nav#utility a:before,
+    nav#primary a:before {
+        width: 0;
+        height: calc(100% + var(--s));
+        top: auto;
+        bottom: calc(-1 * var(--s) / 2);
+        left: calc(-1 * var(--l));
+        transition: width 0.2s ease, opacity 0.2s ease;
+    }
+    nav#utility a:hover:before,
+    nav#utility a.active:before,
+    nav#primary a:hover:before,
+    nav#primary a.active:before {
+        width: 5px;
+    }
+    nav a.has-secondary i {
+        background: transparent;
+        border-radius: 2em;
+        margin-left: var(--m);
+        padding: 0.2em 0.4em;
+        display: inline;
+    }
+    nav a.has-secondary i:hover {
+        background: rgba(0, 188, 236, .25);
+    }
+    nav .secondary {
+        font-size: 0.8em;
+        padding-left: var(--l);
+    }
+    nav .secondary a {
+        margin-bottom: var(--s) !important;
+    }
+    nav#secondary {
+        display: none !important;
+    }
+}
+@media all and (max-width:679px) {
+    header {
+        padding: var(--m) var(--l);
+    }
+    #nav-wrap {
+        margin-top: var(--m);
+    }
+}
+@media all and (max-width:579px) {
+    a#logo span {
+        display: none;
+    }
+}
