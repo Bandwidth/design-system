@@ -6,6 +6,7 @@
 	background-color: var(--bw-light-red);
 	font-weight: 500;
 	width:auto;
+	margin-bottom: 30px;
 }
 .alert p{
 	margin: 0;
