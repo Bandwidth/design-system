@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bandwidth Style Guide | Inputs</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href="font/css/styles.min.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/inputs.css" rel="stylesheet">
+</head>
+<body>
+<h1>Inputs</h1>
+<p>Add a description here.</p>
+<hr />
+<br />
+<!-- Start component HTML -->
+<div class="form-input clearfix">
+    <label for="input-text">Text:</label>
+    <input type="text" value="" id="input-text" />
+    <div class="help">Help text</div>
+</div>
+<div class="form-input clearfix required">
+    <label for="input-required">Required:</label>
+    <input type="text" value="" id="input-required" required />
+</div>
+<div class="form-input disabled clearfix">
+    <label for="input-disabled">Disabled:</label>
+    <input type="text" value="Lorem ipsum" id="input-disabled" disabled />
+</div>
+<div class="form-input clearfix">
+    <label for="input-success">Success:</label>
+    <input type="text" value="" id="input-success" class="success" />
+</div>
+<div class="form-input clearfix">
+    <label for="input-error">Error:</label>
+    <input type="text" value="" id="input-error" class="error" />
+</div>
+<div class="form-input clearfix">
+    <label for="input-email">Email:</label>
+    <input type="email" value="" id="input-email" />
+</div>
+<div class="form-input clearfix">
+    <label for="input-password">Password:</label>
+    <input type="password" value="" id="input-password" />
+</div>
+<div class="form-input clearfix">
+    <label for="input-number">Number:</label>
+    <input type="number" value="" min="1" max="10" step="1" id="input-number" />
+    <div class="help">Between 1 and 10</div>
+</div>
+<div class="form-input clearfix">
+    <label for="input-tel">Tel:</label>
+    <input type="tel" value="" id="input-tel" />
+    <div class="help">Accepts NANP formats, e.g. (555) 555-1212, +1.800.555.6789, or 8885551234</div>
+</div>
+<div class="form-input clearfix">
+    <label>Tel (split):</label>
+    <div class="tel-wrap">( <input type="tel" size="3" maxlength="3" /> ) <input type="tel" size="3" maxlength="3" /> - <input type="tel" size="4" maxlength="4" /></div>
+    <div class="help">Format: ( NPA ) NXX - XXXX</div>
+</div>
+<div class="form-input clearfix">
+    <label>Dropdown:</label>
+    <select>
+        <option>Test 1</option>
+        <option>Test 2</option>
+        <option>Test 3</option>
+    </select>
+</div>
+<div class="inline-wrap">
+    <div class="form-input clearfix blocks">
+        <label for="input-text">Text:</label>
+        <input type="text" value="" id="input-text" />
+        <div class="help">Help text</div>
+    </div>
+    <div class="form-input clearfix blocks">
+        <label for="input-text">Text:</label>
+        <input type="text" value="" id="input-text" />
+        <div class="help">Help text</div>
+    </div>
+</div>
+<div class="inline-wrap">
+    <div class="form-input clearfix blocks half-block">
+        <label for="input-text">Card number:</label>
+        <input type="text" value="" id="input-text" />
+    </div>
+    <div class="form-input expiration clearfix blocks medium-block">
+        <label for="input-text">Expiration:</label>
+        <select>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select><select>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+    </div>
+    <div class="form-input clearfix blocks medium-block">
+        <label for="input-text">CVV:</label>
+        <input type="text" value="" id="input-text" />
+    </div>
+</div>
+<!-- End component HTML -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
