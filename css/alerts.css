@@ -18,7 +18,7 @@
 .alert:before{
 	display:inline-block;
 	position: absolute;
-	font-family: 'Bandwidth', Open Sans, Oswald, Sans-Serif;
+	font-family: 'Bandwidth', 'Overpass', sans-serif;
 	width: var(--outer-padding);
 	height: var(--outer-padding);
 	line-height: var(--outer-padding);

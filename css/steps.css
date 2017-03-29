@@ -7,7 +7,7 @@
 }
 .step:before {
     position: absolute;
-    font-family: 'Bandwidth', Open Sans, Oswald, Sans-Serif;
+    font-family: 'Bandwidth', 'Overpass', sans-serif;
     width: 2.5em;
     height: 2.5em;
     line-height: 2.5em;
