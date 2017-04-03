@@ -1,0 +1,15 @@
+{
+	"plugins": [
+		"include-codeblock",
+		"ace",
+		"theme-api",
+		"include"
+	],
+	"pluginsConfig": {
+		"include-codeblock": {
+			"template": "ace",
+			"theme": "chrome",
+			"edit": true
+		}
+	}
+}
