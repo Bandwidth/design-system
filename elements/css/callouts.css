@@ -1,0 +1,62 @@
+.tooltip{
+	cursor: pointer;
+  border-top-left-radius: 0px !important;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+		visibility: hidden;
+    max-width: 300px;
+    background-color: #fff;
+    color: inherit;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: var(--bw-border);
+    box-shadow: var(--shadow);
+    margin-left: var(--m);
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    margin-top: -10px;
+}
+.tooltiptext {
+	position: relative;
+	border: var(--bw-border);
+}
+.tooltiptext:after, .tooltiptext:before {
+	right: 100%;
+	top: 20px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+/*.tooltiptext:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: var(--bw-blue);
+	border-width: 5px;
+	margin-top: -5px;
+}*/
+/*.tooltiptext:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #1px solid rgba(0,0,0,.15);;
+	border-width: 6px;
+	margin-top: -6px;
+}*/
+/* Show the tooltip text when you mouse over the tooltip container */
+.hover:hover .tooltiptext {
+    visibility: visible;
+}
+.extraDetail{
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+.visible{
+	visibility: visible !important;
+}
+.hover .tooltiptext{
+	z-index: 10;
+}

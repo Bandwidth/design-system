@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Lists
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/lists.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,12 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/lists.html)
 
 
 {% sample lang="css" %}
-[import](../source/css/tables.css)
+[import](../source/css/lists.css)
 
-
-{% sample lang="js" %}
-[import](../source/js/tables.js)
 
 
 {% endmethod %}

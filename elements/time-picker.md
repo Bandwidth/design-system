@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Time-Picker
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/time-picker.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,15 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/time-picker.html)
 
 
 {% sample lang="css" %}
-[import](../source/css/tables.css)
+[import](../source/css/time-picker.css)
 
 
 {% sample lang="js" %}
-[import](../source/js/tables.js)
+[import](../source/js/time-picker.js)
 
 
 {% endmethod %}

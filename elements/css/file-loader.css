@@ -1,0 +1,53 @@
+.file-loader {
+    border: 1px solid var(--disabled-grey);
+    padding: var(--m) var(--m) var(--m) 0;
+    display: none;
+}
+.file-loader .progress {
+    text-align: center;
+    margin-top: 0.9em;
+    margin-right: 0.5em;
+    width: 50px;
+    height: 28px;
+    float: left;
+    position: relative;
+}
+.file-loader .icons8-checkmark {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: 1.2em;
+    left: calc(50% - 10px);
+    z-index: 2;
+    display: none;
+}
+.file-loader .icon-empty,
+.file-loader .icon-full {
+    font-size: 28px;
+    height: 100%;
+    width: 50px;
+    display: block;
+    position: absolute;
+    bottom: 0.8em;
+    left: 0;
+    overflow: hidden;
+}
+.file-loader .icon-empty i,
+.file-loader .icon-full i {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 14px);
+}
+.file-loader .icon-full {
+    height: 0%;
+}
+.file-loader .percent {
+    font-size: 0.8em;
+}
+.file-loader a.remove {
+    color: var(--bw-red);
+    float: right;
+}
+.file-loader a.remove:after {
+    background-color: var(--bw-red);
+}

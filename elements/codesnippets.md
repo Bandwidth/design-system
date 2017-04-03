@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Codesnippets
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/codesnippets.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,9 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/codesnippets.html)
 
 
-{% sample lang="css" %}
-[import](../source/css/tables.css)
-
-
-{% sample lang="js" %}
-[import](../source/js/tables.js)
 
 
 {% endmethod %}

@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Toggles
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/toggles.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,12 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/toggles.html)
 
 
 {% sample lang="css" %}
-[import](../source/css/tables.css)
+[import](../source/css/toggles.css)
 
-
-{% sample lang="js" %}
-[import](../source/js/tables.js)
 
 
 {% endmethod %}

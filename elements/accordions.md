@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Accordions
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/accordions.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,15 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/accordions.html)
 
 
 {% sample lang="css" %}
-[import](../source/css/tables.css)
+[import](../source/css/accordions.css)
 
 
 {% sample lang="js" %}
-[import](../source/js/tables.js)
+[import](../source/js/accordions.js)
 
 
 {% endmethod %}

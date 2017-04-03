@@ -1,6 +1,6 @@
 
 {% method %}
-# Tables
+# Navigation-Catapult
 {% raw %}
 <div class='styleguidebody'>
 <style>
@@ -9,7 +9,7 @@
   font-family: "Overpass", sans-serif;
 }
 </style>
-!INCLUDE "../source/tables.html"
+!INCLUDE "../source/navigation-catapult.html"
 
 </div>
 {% endraw %}
@@ -18,15 +18,9 @@
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/tables.html)
+[import](../source/navigation-catapult.html)
 
 
-{% sample lang="css" %}
-[import](../source/css/tables.css)
-
-
-{% sample lang="js" %}
-[import](../source/js/tables.js)
 
 
 {% endmethod %}
