@@ -11,9 +11,13 @@ import shutil
 relative_source_file_path = '../source/'
 relative_source_js_file_path = relative_source_file_path + 'js/'
 relative_source_css_file_path = relative_source_file_path + 'css/'
+relative_source_font_file_path = relative_source_file_path + 'font/'
+relative_source_images_file_path = relative_source_file_path + 'images/'
 relative_md_file_path = '../elements/'
 relative_md_js_file_path = relative_md_file_path + 'js/'
 relative_md_css_file_path = relative_md_file_path + 'css/'
+relative_md_font_file_path = relative_md_file_path + 'font/'
+relative_md_images_file_path = relative_md_file_path + 'images/'
 html_file_ending = '.html'
 css_file_ending = '.css'
 js_file_ending = '.js'
@@ -21,7 +25,6 @@ md_file_ending = '.md'
 summary_elements_path = 'elements/'
 summary_file_name = 'SUMMARY.md'
 relative_summary_file_path = '../' + summary_file_name
-
 
 pp = pprint.PrettyPrinter(indent=2)
 def po(o):
@@ -33,8 +36,11 @@ def main():
   elements = build_index()
   summary = build_summary_md(elements)
   save_summary(summary)
-  shutil.copytree(relative_source_js_file_path, relative_md_js_file_path)
-  shutil.copytree(relative_source_css_file_path, relative_md_css_file_path)
+  # shutil.copytree(relative_source_js_file_path, relative_md_js_file_path)
+  # shutil.copytree(relative_source_css_file_path, relative_md_css_file_path)
+  # shutil.copytree(relative_source_font_file_path, relative_md_font_file_path)
+  # shutil.copytree(relative_source_images_file_path,
+  #                 relative_md_images_file_path)
 
 def add_element(summary, element):
   return summary + '\n' + element
@@ -126,7 +132,10 @@ class Element:
   def get_header(self):
     return '# '+self.file_name.title()
 
-  def get_body(self):
+  def get_iframe_body(self):
+    return strings.md_body_iframe % self.html_file_path
+
+  def get_md_body(self):
     return strings.md_body_contents % self.html_file_path
 
   def get_html_code(self):
@@ -150,7 +159,7 @@ class Element:
                                        self.get_js_code())
   def get_md_page(self):
     return strings.md_file_contents % (self.get_header(),
-                                       self.get_body(),
+                                       self.get_iframe_body(),
                                        self.get_code_blocks())
   def get_summary_link(self):
     md_file_path = summary_elements_path + self.file_name + md_file_ending

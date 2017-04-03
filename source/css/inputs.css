@@ -3,7 +3,7 @@
 }
 input {
     color: var(--med-grey);
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -92,7 +92,7 @@ select{
   border-radius: 0px;
   width: 100%;
   color: var(--med-grey);
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Overpass', sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.02em;

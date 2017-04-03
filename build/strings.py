@@ -13,6 +13,19 @@ md_body_contents = """
 {%% endraw %%}
 """
 
+md_body_iframe = """
+{%% raw %%}
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
+<iframe src="%s" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%%"></iframe>
+{%% endraw %%}
+"""
+
 md_start_method = """
 {%% method %%}
 """
