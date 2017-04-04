@@ -22,7 +22,7 @@ mv docs.css ./source
 
 function doCompile {
   make compile
-  sleep(3)
+  sleep 3
   ls -la _book/
   mv _book/* out/
 }
