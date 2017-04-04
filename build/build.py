@@ -128,7 +128,7 @@ class Element:
   def _find_js(self):
       js_file_path = relative_source_js_file_path + self.file_name  + js_file_ending
       js_file = glob.glob(js_file_path)
-      po(js_file)
+      ##po(js_file)
       if not js_file:
         return None
       else:
