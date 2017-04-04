@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bandwidth Style Guide | Textareas</title>
+<link href="font/css/styles.min.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/textareas.css" rel="stylesheet">
+</head>
+<body>
+<h1>Textareas</h1>
+<p>Add a description here.</p>
+<hr />
+<br />
+<!-- Start component HTML -->
+<div class="form-input clearfix">
+    <label for="textarea">Label:</label>
+    <textarea rows="3" id="textarea"></textarea>
+    <div class="help">Help text</div>
+</div>
+<div class="form-input clearfix required">
+    <label for="textarea-required">Required:</label>
+    <textarea rows="3" id="textarea-required" required></textarea>
+</div>
+<div class="form-input disabled clearfix">
+    <label for="textarea-disabled">Disabled:</label>
+    <textarea rows="3" id="textarea-disabled" disabled>Lorem ipsum</textarea>
+</div>
+<div class="form-input clearfix">
+    <label for="textarea-success">Success:</label>
+    <textarea rows="3" id="textarea-success" class="success"></textarea>
+</div>
+<div class="form-input clearfix">
+    <label for="textarea-error">Error:</label>
+    <textarea rows="3" id="textarea-error" class="error"></textarea>
+</div>
+<!-- End component HTML -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

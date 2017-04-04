@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bandwidth Style Guide | Component Name</title>
+<link href="font/css/styles.min.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/buttons.css" rel="stylesheet">
+<link href="css/inputs.css" rel="stylesheet">
+<link href="css/toggles.css" rel="stylesheet">
+<style type="text/css">
+/* Start component CSS */
+body {
+    padding: 50px;
+    width: calc(70% - 100px);
+    margin: 0 auto;
+}
+.tabbed p:first-of-type,
+.tabbed ul:first-of-type,
+.tabbed ol:first-of-type,
+.accordion p:first-of-type,
+.accordion ul:first-of-type,
+.accordion ol:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+.tabbed p:last-of-type,
+.tabbed ul:last-of-type,
+.tabbed ol:last-of-type,
+.accordion p:last-of-type,
+.accordion ul:last-of-type,
+.accordion ol:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* Tab content */
+.tabbed .contents {
+    background: #fff;
+    border: var(--bw-border);
+    padding: 15px;
+    transition: all 0.2s ease;
+}
+/* Stacked tabs */
+.tabbed.stacked .tab-drawer,
+.tabbed.stacked .content {
+    display: block;
+}
+.tabbed.stacked .tab-drawer {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: var(--bw-border);
+    margin: -1px;
+    padding: 15px;
+    width: calc(100% - 30px);
+    cursor: default;
+    position: relative;
+    opacity: .5;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+.tabbed.stacked .tab-drawer.active {
+    opacity: 1;
+}
+.tabbed.stacked .tab-drawer:before {
+    content: "\f116";
+    color: var(--med-grey);
+    font-family: "Bandwidth";
+    letter-spacing: 0.5em;
+}
+.tabbed.stacked .tab-drawer.active:before {
+    content: "\f117";
+}
+.tabbed.stacked .tab-drawer.disabled {
+    background: var(--disabled-grey);
+}
+.tabbed.stacked .tab-drawer:not(.disabled):hover {
+    opacity: 1;
+    border-color: var(--bw-blue);
+    cursor: pointer;
+    z-index: 1;
+}
+.tabbed.stacked .contents {
+    border-radius: 0;
+    padding: 0;
+}
+.tabbed.stacked .content {
+    border: var(--bw-border);
+    margin: -1px;
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+/* Accordions */
+.accordions {
+    background: #fff;
+    border: var(--bw-border);
+}
+.accordion {
+    border: var(--bw-border);
+    margin: -1px;
+}
+.accordion .drawer {
+    color: var(--bw-blue);
+    font-size: 1.5em;
+    padding: 30px;
+    cursor: default;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+.accordion .drawer:before {
+    content: "\f116";
+    color: var(--med-grey);
+    font-family: "Bandwidth";
+    letter-spacing: 0.5em;
+}
+.accordion.active .drawer:before {
+    content: "\f117";
+}
+.accordion.disabled {
+    background: var(--disabled-grey);
+    opacity: .5;
+}
+.accordion.disabled .drawer {
+    color: var(--med-grey);
+}
+.accordion:not(.disabled) .drawer:hover {
+    cursor: pointer;
+}
+.accordion .content {
+    padding: 0 30px 30px;
+}
+.status{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.status .inline-wrap{
+  padding: 0;
+}
+.status h2{
+  font-weight: 300;
+  display: inline-block;
+}
+.remain, .new, .dollar{
+  float: right;
+}
+.status input{
+  width: 25%;
+  float: right;
+  text-align: right;
+  margin-left: 10px;
+}
+.updated-status{
+  display: none;
+  color: var(--bw-dark-green);
+}
+.card-ending, .refill-status {
+  font-family: 'Overpass', sans-serif;
+  font-size: .65em;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  font-weight: 100;
+  line-height: 1em;
+}
+.default, .refill{
+  margin-bottom: 15px;
+}
+#add-card, #cancel-add{
+  margin-right: 15px;
+}
+#add-card{
+  color: var(--bw-blue);
+}
+#cancel-add{
+  color: var(--bw-red);
+}
+#billing-info, #stored-cards, #cancel-add, #refill-value, .card-ending{
+  display: none;
+}
+/* End component CSS */
+</style>
+</head>
+<body>
+<!-- Start component HTML -->
+<div class="status">
+    <div class="inline-wrap">
+        <h2>Remaining balance</h2><h2 class="remain">$0.00</h2>
+    </div>
+    <div class="inline-wrap">
+        <h2>Add more</h2><input type="text" value="" id="input-cash" /><h2 class="dollar">$</h2>
+    </div>
+    <div class="inline-wrap updated-status">
+        <h2>New balance</h2><h2 class="new">$0.00</h2>
+    </div>
+</div>
+<div id="billing-info" class="accordions">
+    <div class="accordion a1 active">
+        <div class="drawer">Billing Info <span class="card-ending">Card ending in 2958</span></div>
+        <div class="content">
+          <div id="stored-cards" class="form-input clearfix">
+              <label>Stored payment methods:</label>
+              <select>
+                  <option>New payment method</option>
+                  <option>CARD ENDING IN 2958</option>
+              </select>
+          </div>
+          <div class="inline-wrap">
+              <div class="form-input clearfix blocks">
+                  <label for="input-text">First name:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+              <div class="form-input clearfix blocks">
+                  <label for="input-text">Last name:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+          </div>
+          <div class="inline-wrap">
+              <div class="form-input clearfix blocks">
+                  <label for="input-text">Address Line 1:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+              <div class="form-input clearfix blocks medium-block">
+                  <label for="input-text">City:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+              <div class="form-input clearfix blocks small-block">
+                  <label>State:</label>
+                  <select>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                  </select>
+              </div>
+              <div class="form-input clearfix blocks small-block">
+                  <label for="input-text">Zip:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+          </div>
+          <div class="inline-wrap">
+              <div class="form-input clearfix blocks">
+                  <label for="input-text">Card number:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+              <div class="form-input expiration clearfix blocks medium-block">
+                  <label for="input-text">Expiration:</label>
+                  <select>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                  </select><select>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                  </select>
+              </div>
+              <div class="form-input clearfix blocks medium-block">
+                  <label for="input-text">CVV:</label>
+                  <input type="text" value="" id="input-text" />
+              </div>
+          </div>
+          <div class="toggle clearfix default">
+              <input type="checkbox" id="default" />
+              <label for="default">Save as default payment method</label>
+          </div>
+          <a id="add-card">+ Add payment method</a><a id="cancel-add">Cancel</a>
+        </div>
+    </div>
+    <div class="accordion a2">
+        <div class="drawer">Automatic Refill  <span class="refill-status">(OFF)</span></div>
+        <div class="content">
+            <div class="toggle clearfix refill">
+                <input type="checkbox" id="refill" />
+                <label for="refill">Automatic refill</label>
+            </div>
+            <div id="refill-value">
+                <div class="inline-wrap">
+                    <div class="form-input clearfix blocks">
+                        <label for="input-text">Don't let my account go below:</label>
+                        <input type="text" value="" id="input-text" />
+                    </div>
+                    <div class="form-input clearfix blocks">
+                        <label for="input-text">Add this amount:</label>
+                        <input type="text" value="" id="input-text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<button id="submit" class="medium submit" disabled>Charge me</button>
+<!-- End component HTML -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+// Start component JS
+
+$(document).ready(function() {
+    // Click tab drawer
+    $('.tabbed.stacked .content:not(.active)').hide();
+    $('.tab-drawer:not(.disabled)').click(function(){
+        if (!$(this).hasClass('active')) {
+            var tabNum = this.className.match(/t(\d+)/)[1];
+            // Change active tab
+            $(this).siblings('.tab-drawer').removeClass('active');
+            $(this).addClass('active');
+            // Change active content
+            $(this).siblings('.content').removeClass('active').slideUp(200);
+            $(this).siblings('.c' + tabNum).addClass('active').slideDown(200);
+        } else {
+            // Remove active state
+            $(this).removeClass('active');
+            // Close content
+            $(this).siblings('.content').removeClass('active').slideUp(200);
+        }
+    });
+
+    // Click accordion drawer
+    $('.accordion:not(.active) .content').hide();
+    $('.accordion:not(.disabled) .drawer').click(function(){
+        if (!$(this).parent('.accordion').hasClass('active')) {
+            // Change active accordion
+            $(this).parent('.accordion').siblings('.accordion').removeClass('active');
+            $(this).parent('.accordion').addClass('active');
+            // Change active content
+            $(this).siblings('.content').slideDown(200);
+            $(this).parent('.accordion').siblings('.accordion').find('.content').slideUp(200);
+        } else {
+            // Remove active state
+            $(this).parent('.accordion').removeClass('active');
+            // Close content
+            $(this).siblings('.content').slideUp(200);
+        }
+    });
+});
+
+$('#add-card').click(function(){
+    $('#stored-cards').show();
+    $('#cancel-add').show();
+});
+
+$('#cancel-add').click(function(){
+    $(this).hide();
+    $('#stored-cards').hide();
+});
+
+$('#refill').change(function(){
+    if ($('input#refill').is(':checked')) {
+        $('.refill-status').html('(ON)');
+        $('#refill-value').show();
+    } else {
+        $('.refill-status').html('(OFF)');
+        $('#refill-value').hide();
+    };
+});
+
+$('#default').change(function(){
+    if ($('input#default').is(':checked')) {
+        $('.card-ending').show();
+    } else {
+        $('.card-ending').hide();
+    };
+});
+
+$('#input-cash').on("change paste keyup", function() {
+    if ($(this).val().length > 0 ){
+      $('#billing-info').show();
+      $('.updated-status').show();
+      $('#submit').attr("disabled", false);
+      $('#submit').text('Charge me ' + '$' + parseFloat($(this).val()).toFixed(2));
+    } else {
+      $('#billing-info').hide();
+      $('.updated-status').hide();
+      $('#submit').attr("disabled", true);
+      $('#submit').text('Charge me');
+    };
+});
+
+// End component JS
+</script>
+</body>
+</html>
