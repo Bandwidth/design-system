@@ -41,10 +41,11 @@ SHA=`git rev-parse --verify HEAD`
 git clone $REPO out
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+rm -rf *
 cd ..
 
 # Clean out existing contents
-rm -rf out/**/*
+# rm -rf out/**/*
 ls -la out/
 
 # Run our compile script
