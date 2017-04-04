@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - stable
 before_script:
-  - npm install -g gitbook
+  - npm install -g gitbook-cli
   - mkdir source
   - mv *.html ./source
 script: bash ./deploy.sh

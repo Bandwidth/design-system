@@ -57,7 +57,7 @@ def build_summary_md(elements):
   return summary
 
 def save_summary(summary_contents):
-    print(summary_contents)
+    # print(summary_contents)
     with open (relative_summary_file_path, 'w') as summary:
       summary.write(summary_contents)
 
@@ -175,7 +175,7 @@ class Element:
 
   def save_md_file(self):
     md_file_contents = self.get_md_page()
-    print(md_file_contents)
+    # print(md_file_contents)
     with open (self.md_file_path, 'w') as md_file:
       md_file.write(md_file_contents)
 
