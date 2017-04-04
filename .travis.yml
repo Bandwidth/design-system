@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- stable
+before_script:
+  - npm install -g gitbook
+  - mkdir source
+  - mv *.html ./source
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "10aef33a1842_key"
+  - COMMIT_AUTHOR_EMAIL: "dtolbert@bandwidth.com"
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_10aef33a1842_key -iv $encrypted_10aef33a1842_iv
+  -in travs_id_rsa.pub.enc -out ~\/.ssh/travs_id_rsa.pub -d
