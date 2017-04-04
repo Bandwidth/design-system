@@ -22,7 +22,6 @@ mv docs.css ./source
 
 function doCompile {
   make compile
-  cp -fR _book/ out/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify

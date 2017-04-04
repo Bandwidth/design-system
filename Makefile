@@ -16,4 +16,7 @@ install_gitbook:
 generate_gitbook_files:
 	rm -rf _book && gitbook build
 
-compile: generate_gitbook_from_html copy_book install_gitbook generate_gitbook_files
+move_files:
+	cp -fR _book/ out/
+
+compile: generate_gitbook_from_html copy_book install_gitbook generate_gitbook_files move_files
