@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bandwidth Style Guide | Anchors</title>
+<link href="font/css/styles.min.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/code.css" rel="stylesheet">
+<style type="text/css">
+div { padding: 10px; }
+.dark { background: var(--bw-dark-blue); }
+.dark a { color: #fff; }
+.dark a:after { background: #fff; }
+.blue { background: var(--bw-light-blue); }
+.blue a { color: var(--bw-dark-blue); }
+.blue a:after { background: var(--bw-dark-blue); }
+.green { background: var(--bw-light-green); }
+.green a { color: var(--bw-dark-green); }
+.green a:after { background: var(--bw-dark-green); }
+.red { background: var(--bw-light-red); }
+.red a { color: var(--bw-red); }
+.red a:after { background: var(--bw-red); }
+</style>
+</head>
+<body>
+<h1>Anchors</h1>
+<p>Anchors should behave differently depending on their content and context.</p>
+<hr />
+<br />
+<!-- Start component HTML -->
+<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipiscing elit, sed do eiusmod tempor <a href="">incididunt ut labore et dolore magna</a> aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br />
+<div class="dark">
+    <a href="">Test anchor</a>
+</div>
+<br />
+<div class="blue">
+    <a href="">Test anchor</a>
+</div>
+<br />
+<div class="green">
+    <a href="">Test anchor</a>
+</div>
+<br />
+<div class="red">
+    <a href="">Test anchor</a>
+</div>
+<br />
+<p>Just text: <a href="">Text!</a></p>
+<p>Just icon: <a href=""><i class="icons8-open-in-window"></i></a></p>
+<p>Text and icon, icon first: <a href=""><i class="icons8-help"></i> Learn more about this</a></p>
+<p>Text and icon, icon last: <a href="">Learn more about this <i class="icons8-help"></i></a></p>
+<p>Text and icon, external icon shows on hover: <a href="">Open in new window <i class="icons8-open-in-window"></i></a></p>
+<p>Code block: <a href=""><code>true/false</code></a></p>
+<p>Image (no hover): <a href=""><img src="http://dev.bandwidth.com/images/github_logo.png"></a></p>
+<p>Testing an external link inside a paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. <a href="">Link to somewhere else <i class="icons8-open-in-window"></i></a> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<!-- End component HTML -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>

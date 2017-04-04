@@ -1,0 +1,108 @@
+div.toggle *,
+div.toggle *:before,
+div.toggle *:after {
+    transition: all 0.2s ease;
+}
+/* hide input */
+div.toggle input[type="checkbox"]:empty {
+    margin-left: -9999px;
+}
+/* basic label styles */
+div.toggle input[type="checkbox"]:empty ~ label {
+    cursor: pointer;
+    position: relative;
+    padding: 0.2em 0 0.2em 4.2em;
+    float: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div.toggle input[type="checkbox"] + label:before {
+    content: "";
+    background: #fff;
+    border: var(--bw-db-border-thick);
+    border-radius: 2em;
+    width: 3.4em;
+    height: 1.7em;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+div.toggle input[type="checkbox"] + label:after {
+    content: "";
+    background: #fff;
+    border: var(--bw-db-border-thick);
+    border-radius: 2em;
+    width: 1.7em;
+    height: 1.7em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.toggle input[type="checkbox"]:focus:not(:hover) + label:before {
+    box-shadow: 0 0 0 5px var(--bw-light-blue);
+}
+/* checked */
+div.toggle input[type="checkbox"]:checked + label:before {
+    background: var(--bw-dark-blue);
+}
+div.toggle input[type="checkbox"]:checked + label:after {
+    left: 1.7em;
+}
+div.toggle input[type="checkbox"]:not([disabled]):checked:hover + label:before {
+    background: var(--bw-alternate-blue);
+    border-color: var(--bw-alternate-blue);
+}
+div.toggle input[type="checkbox"]:not([disabled]):checked:hover + label:after {
+    border-color: var(--bw-alternate-blue);
+}
+/* not checked */
+div.toggle input[type="checkbox"]:not([disabled]):not(:checked):hover + label:before,
+div.toggle input[type="checkbox"]:not([disabled]):not(:checked):hover + label:after {
+    border-color: var(--bw-alternate-blue);
+}
+/* disabled */
+div.toggle input[type="checkbox"][disabled] ~ label {
+    cursor: auto;
+    opacity: 0.5;
+}
+div.toggle input[type="checkbox"][disabled] + label:before {
+    background: var(--disabled-grey);
+    border-color: var(--bw-help-text);
+    cursor: auto;
+}
+div.toggle input[type="checkbox"][disabled]:checked + label:before {
+    background: var(--bw-help-text);
+}
+div.toggle input[type="checkbox"][disabled] + label:after {
+    background: var(--disabled-grey);
+    border-color: var(--bw-help-text);
+    cursor: auto;
+}
+/* right */
+div.toggle.right input[type="checkbox"]:empty ~ label {
+    padding: 0.2em 4.2em 0.2em 0;
+}
+div.toggle.right input[type="checkbox"] + label:before {
+    left: auto;
+    right: 0;
+}
+div.toggle.right input[type="checkbox"] + label:after {
+    left: auto;
+    right: 1.7em;
+}
+div.toggle.right input[type="checkbox"]:checked + label:after {
+    right: 0;
+}
+/* right, full-width */
+div.toggle.right.full-width input[type="checkbox"]:empty ~ label {
+    width: 100%;
+}
+/* right, float */
+div.toggle.right.float input[type="checkbox"]:empty ~ label {
+    float: right;
+}

@@ -1,0 +1,14 @@
+{
+	"plugins": [
+		"include-codeblock",
+		"ace",
+		"theme-api",
+		"include",
+		"copy-code-button"
+	],
+	"pluginsConfig": {
+		"include-codeblock": {
+			"template": "full"
+		}
+	}
+}

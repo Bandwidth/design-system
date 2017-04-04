@@ -1,0 +1,44 @@
+p, ul, ol {
+    margin: 0 0 1em;
+    padding: 0;
+}
+li {
+    margin: 0 0 .5em 2em;
+    padding: 0;
+}
+li p {
+    margin: 0 0 .5em;
+}
+ul:last-child,
+ol:last-child,
+p:last-child {
+    margin-bottom: 0;
+}
+ul {
+    list-style: disc outside;
+}
+ul ul {
+    list-style: circle outside;
+}
+ul ul li:first-child,
+ul ol li:first-child,
+ol ol li:first-child,
+ol ul li:first-child {
+    margin-top: .5em;
+}
+ol {
+    list-style: decimal outside;
+}
+ol ol {
+    list-style: lower-latin outside;
+}
+ul.icons {
+    list-style: none;
+}
+ul.icons li {
+    position: relative;
+}
+ul.icons li i:first-child {
+    position: absolute;
+    left: -1.5em;
+}
