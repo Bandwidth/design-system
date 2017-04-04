@@ -3,13 +3,12 @@
 		"include-codeblock",
 		"ace",
 		"theme-api",
-		"include"
+		"include",
+		"copy-code-button"
 	],
 	"pluginsConfig": {
 		"include-codeblock": {
-			"template": "acefull",
-			"theme": "chrome",
-			"edit": true
+			"template": "full"
 		}
 	}
 }
