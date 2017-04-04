@@ -50,6 +50,8 @@ ls -la out/
 
 # Run our compile script
 doCompile
+cp deploy_key.enc ./out
+ls -la _book/
 
 # Now let's go have some fun with the cloned repo
 cd out
