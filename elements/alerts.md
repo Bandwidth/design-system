@@ -2,21 +2,14 @@
 {% method %}
 # Alerts
 {% raw %}
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
-<iframe src="../source/alerts.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"></iframe>
+<iframe src="../source/alerts.html" scrolling="no" frameborder="0" height="100%" width="100%" id='elementIframe'></iframe>
 {% endraw %}
 
 {% common %}
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/alerts.html)
+[import: html](../source/alerts.html)
 
 
 {% sample lang="css" %}

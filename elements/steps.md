@@ -2,21 +2,14 @@
 {% method %}
 # Steps
 {% raw %}
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
-<iframe src="../source/steps.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"></iframe>
+<iframe src="../source/steps.html" scrolling="no" frameborder="0" height="100%" width="100%" id='elementIframe'></iframe>
 {% endraw %}
 
 {% common %}
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/steps.html)
+[import: html](../source/steps.html)
 
 
 {% sample lang="css" %}

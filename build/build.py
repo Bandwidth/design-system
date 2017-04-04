@@ -5,14 +5,19 @@ import sys
 import glob
 import pprint
 import os
+import os.path
 import strings
 import shutil
 
+abs_script_location = os.path.dirname(os.path.abspath(__file__))
+
+#relative_source_file_path = os.path.join(abs_script_location, '../source/')
 relative_source_file_path = '../source/'
 relative_source_js_file_path = relative_source_file_path + 'js/'
 relative_source_css_file_path = relative_source_file_path + 'css/'
 relative_source_font_file_path = relative_source_file_path + 'font/'
 relative_source_images_file_path = relative_source_file_path + 'images/'
+#relative_md_file_path = os.path.join(abs_script_location, '../elements/')
 relative_md_file_path = '../elements/'
 relative_md_js_file_path = relative_md_file_path + 'js/'
 relative_md_css_file_path = relative_md_file_path + 'css/'
@@ -24,7 +29,7 @@ js_file_ending = '.js'
 md_file_ending = '.md'
 summary_elements_path = 'elements/'
 summary_file_name = 'SUMMARY.md'
-relative_summary_file_path = '../' + summary_file_name
+relative_summary_file_path = str(os.path.join(abs_script_location, '../')) + summary_file_name
 
 pp = pprint.PrettyPrinter(indent=2)
 def po(o):
@@ -71,7 +76,10 @@ def create_elements_folder(directory):
         raise
 
 def delete_elements_folder(directory):
-  shutil.rmtree(directory)
+  if not os.path.exists(os.path.dirname(directory)):
+    return
+  else:
+    shutil.rmtree(directory)
 
 def setup_elements_folder(directory):
   delete_elements_folder(directory)

@@ -2,21 +2,14 @@
 {% method %}
 # Comments
 {% raw %}
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
-<iframe src="../source/comments.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"></iframe>
+<iframe src="../source/comments.html" scrolling="no" frameborder="0" height="100%" width="100%" id='elementIframe'></iframe>
 {% endraw %}
 
 {% common %}
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/comments.html)
+[import: html](../source/comments.html)
 
 
 {% sample lang="css" %}

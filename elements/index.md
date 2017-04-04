@@ -2,21 +2,14 @@
 {% method %}
 # Index
 {% raw %}
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
-<iframe src="../source/index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"></iframe>
+<iframe src="../source/index.html" scrolling="no" frameborder="0" height="100%" width="100%" id='elementIframe'></iframe>
 {% endraw %}
 
 {% common %}
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/index.html)
+[import: html](../source/index.html)
 
 
 

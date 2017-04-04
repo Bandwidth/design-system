@@ -2,21 +2,14 @@
 {% method %}
 # Radio-Groups
 {% raw %}
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
-
-<iframe src="../source/radio-groups.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"></iframe>
+<iframe src="../source/radio-groups.html" scrolling="no" frameborder="0" height="100%" width="100%" id='elementIframe'></iframe>
 {% endraw %}
 
 {% common %}
 HTML, CSS, & JS
 
 {% sample lang="html" %}
-[import](../source/radio-groups.html)
+[import: html](../source/radio-groups.html)
 
 
 {% sample lang="css" %}
