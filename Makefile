@@ -3,6 +3,8 @@ default:
 
 copy_book:
 	cp ./build/book.json .
+	mkdir styles
+	cp ./build/website.css ./styles/
 
 generate_gitbook_from_html:
 	cd build && python build.py && cd ../
