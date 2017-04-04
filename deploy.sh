@@ -22,6 +22,9 @@ mv docs.css ./source
 
 function doCompile {
   make compile
+  sleep(3)
+  ls -la _book/
+  mv _book/* out/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -50,8 +53,7 @@ ls -la out/
 
 # Run our compile script
 doCompile
-cp deploy_key.enc ./out
-ls -la _book/
+#cp deploy_key.enc ./out
 
 # Now let's go have some fun with the cloned repo
 cd out
