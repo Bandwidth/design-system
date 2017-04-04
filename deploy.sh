@@ -4,6 +4,22 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
+mkdir source
+mkdir source/font
+mkdir source/css
+mkdir source/js
+mkdir source/images
+mv *.html ./source
+mv font/* ./source/font
+rm -rf font
+mv css/* ./source/css
+rm -rf css
+mv js/* ./source/js
+rm -rf js
+mv images/* ./source/images
+rm -rf images
+mv docs.css ./source
+
 function doCompile {
   make compile
   cp -fR _book/ out/
