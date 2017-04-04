@@ -119,7 +119,7 @@ class Element:
   def _find_css(self):
     css_file_path = relative_source_css_file_path + self.file_name + css_file_ending
     css_file = glob.glob(css_file_path)
-    po(css_file)
+    #po(css_file)
     if not css_file:
       return None
     else:
