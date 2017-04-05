@@ -162,12 +162,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="elements/buttons.html">
+        <li class="chapter " data-level="1.6" data-path="elements/buttons-iconic.html">
             
-                <a href="elements/buttons.html">
+                <a href="elements/buttons-iconic.html">
             
                     
-                    buttons
+                    buttons-iconic
             
                 </a>
             
@@ -175,12 +175,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="elements/buttons-iconic.html">
+        <li class="chapter " data-level="1.7" data-path="elements/buttons.html">
             
-                <a href="elements/buttons-iconic.html">
+                <a href="elements/buttons.html">
             
                     
-                    buttons-iconic
+                    buttons
             
                 </a>
             
@@ -370,20 +370,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.22" data-path="elements/navigation.html">
-            
-                <a href="elements/navigation.html">
-            
-                    
-                    navigation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.23" data-path="elements/navigation-pnd.html">
+        <li class="chapter " data-level="1.22" data-path="elements/navigation-pnd.html">
             
                 <a href="elements/navigation-pnd.html">
             
@@ -396,12 +383,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.24" data-path="elements/navigation-vmd.html">
+        <li class="chapter " data-level="1.23" data-path="elements/navigation-vmd.html">
             
                 <a href="elements/navigation-vmd.html">
             
                     
                     navigation-vmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="elements/navigation.html">
+            
+                <a href="elements/navigation.html">
+            
+                    
+                    navigation
             
                 </a>
             
@@ -610,7 +610,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="bandwidth-design-system">Bandwidth Design System</h2>
+                                <h1 id="bandwidth-design-system">Bandwidth Design System</h1>
+<p>This is the Bandwidth design system.</p>
+<h2 id="run-locally">Run Locally</h2>
+<p>To run the design system locally:</p>
+<h3 id="prereqs">Prereqs</h3>
+<ul>
+<li><a href="https://git-scm.com/book/en/v1/Getting-Started-Installing-Git" target="_blank">Git</a></li>
+<li><a href="https://nodejs.org/en/download/" target="_blank">Node &amp; NPM</a></li>
+<li><a href="https://www.python.org/downloads/" target="_blank">Python v2.7.*</a></li>
+</ul>
+<h4 id="1-install-gitbook-cli">1. Install gitbook-cli</h4>
+<pre><code class="lang-bash">npm install -g gitbook-cli
+</code></pre>
+<h4 id="2-clone-design-system">2. Clone Design System:</h4>
+<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/Bandwidth/design-system.git
+</code></pre>
+<h4 id="3-change-folder-to-design-system">3. Change folder to <code>design-system</code></h4>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> design-system
+</code></pre>
+<h4 id="4-build-the-design-system">4. Build The Design system</h4>
+<pre><code class="lang-bash">make
+</code></pre>
+<h4 id="5-serve-the-design-system">5. Serve the Design system</h4>
+<pre><code class="lang-bash">make serve
+</code></pre>
 
                                 
                                 </section>
@@ -644,7 +668,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"accordions","level":"1.2","depth":1,"path":"elements/accordions.md","ref":"elements/accordions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-04-04T20:44:07.385Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-04T20:45:40.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"accordions","level":"1.2","depth":1,"path":"elements/accordions.md","ref":"elements/accordions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-04-05T16:09:56.775Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T16:10:50.399Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
