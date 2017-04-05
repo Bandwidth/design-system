@@ -5,8 +5,8 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  make compile
-  sleep 3
+  make
+  sleep 1
   mv _tmp/_book/* out/
 }
 

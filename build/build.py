@@ -29,10 +29,7 @@ js_file_ending = '.js'
 md_file_ending = '.md'
 summary_elements_path = 'elements/'
 summary_file_name = 'SUMMARY.md'
-relative_summary_file_path = str(
-    os.path.join(
-        abs_script_location,
-        '../')) + summary_file_name
+relative_summary_file_path = '../' + summary_file_name
 
 
 pp = pprint.PrettyPrinter(indent=2)

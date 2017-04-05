@@ -4,3 +4,4 @@ _book
 npm-debug.log
 deploy_key
 deploy_key.pub
+_tmp
