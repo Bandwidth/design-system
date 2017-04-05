@@ -29,6 +29,7 @@ cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 rm -rf *
 cd ..
+cp deploy_key.enc ./out
 
 # Clean out existing contents
 # rm -rf out/**/*
