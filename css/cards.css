@@ -1,3 +1,5 @@
+@import url('buttons.css');
+
 body *, html *{
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;

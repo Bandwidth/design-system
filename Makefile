@@ -14,7 +14,6 @@ copy_files:
 	cp -a css/. ./_tmp/source/css/
 	cp -a js/. ./_tmp/source/js/
 	cp -a images/. ./_tmp/source/images/
-	cp docs.css ./_tmp/source
 	cp README.md ./_tmp/
 	cp ./build/book.json ./_tmp
 	cp ./build/website.css ./_tmp/styles/
