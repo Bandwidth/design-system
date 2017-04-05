@@ -7,7 +7,7 @@ TARGET_BRANCH="gh-pages"
 function doCompile {
   make
   sleep 1
-  mv _tmp/_book/* out/
+  cp -a _tmp/_book/. out/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
