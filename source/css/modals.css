@@ -1,3 +1,5 @@
+@import url('buttons.css');
+
 .modalContainer{
   position: fixed;
   top: 0;
