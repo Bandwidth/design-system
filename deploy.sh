@@ -4,27 +4,10 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
-mkdir source
-mkdir source/font
-mkdir source/css
-mkdir source/js
-mkdir source/images
-mv *.html ./source
-mv font/* ./source/font
-rm -rf font
-mv css/* ./source/css
-rm -rf css
-mv js/* ./source/js
-rm -rf js
-mv images/* ./source/images
-rm -rf images
-mv docs.css ./source
-
 function doCompile {
   make compile
   sleep 3
-  ls -la _book/
-  mv _book/* out/
+  mv _tmp/_book/* out/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -49,7 +32,6 @@ cd ..
 
 # Clean out existing contents
 # rm -rf out/**/*
-ls -la out/
 
 # Run our compile script
 doCompile
@@ -57,7 +39,6 @@ doCompile
 
 # Now let's go have some fun with the cloned repo
 cd out
-ls -la
 git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
