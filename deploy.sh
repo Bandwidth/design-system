@@ -28,7 +28,10 @@ git clone $REPO out
 cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 rm -rf *
+ls -la
 cd ..
+rm -rf out/*
+ls -la out
 cp deploy_key.enc ./out
 
 # Clean out existing contents
