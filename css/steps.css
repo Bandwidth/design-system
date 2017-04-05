@@ -1,3 +1,6 @@
+@import url('buttons.css');
+@import url('inputs.css');
+
 .stepContainer{
   display: flex;
   flex-direction: column;

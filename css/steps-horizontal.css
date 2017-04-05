@@ -1,0 +1,12 @@
+@import url('buttons.css');
+@import url('inputs.css');
+@import url('steps.css');
+
+/* Overrides of steps.css */
+.stepContainer{
+  flex-direction: row;
+}
+.step{
+  margin: 0px 10px;
+  flex: 1;
+}

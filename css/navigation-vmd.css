@@ -1,0 +1,32 @@
+@import url('lists.css');
+@import url('navigation.css');
+
+/* Overrides of navigation.css */
+header {
+    background: #1f2a44;
+}
+header a {
+    color: #fff;
+}
+a#logo img {
+    width: 26px;
+}
+#mobile-menu {
+    color: #fff;
+}
+nav a:before {
+    background: var(--bw-blue);
+}
+nav#utility a,
+nav#primary a {
+    color: #fff;
+}
+@media all and (max-width:999px) {
+    nav#utility {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    nav a.has-secondary i:hover {
+        background: rgba(0, 188, 236, .25);
+    }
+}
