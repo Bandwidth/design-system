@@ -21,7 +21,8 @@ copy_files:
 	cp ./build/*.py ./_tmp/build
 	cd ./_tmp; \
 	cd build && python build.py && cd ../;\
-	gitbook install
+	gitbook install;\
+	cd ../
 
 gitbook_build:
 	cd ./_tmp && gitbook build
