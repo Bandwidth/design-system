@@ -5,3 +5,6 @@ npm-debug.log
 deploy_key
 deploy_key.pub
 _tmp
+
+*.DS_Store
+font/.DS_Store
