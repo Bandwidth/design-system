@@ -29,7 +29,7 @@ md_end_method = """
 
 md_html_import = """
 {%% sample lang="html" %%}
-[import: html](%s)
+[import: 'html'](%s)
 """
 
 md_css_import = """
