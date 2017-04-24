@@ -1,4 +1,4 @@
-button{
+.button{
 	display:inline-block;
 	position: relative;
 	padding: var(--m) var(--xl);
@@ -17,14 +17,14 @@ button{
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-button:hover{
+.button:hover{
 	background-color: var(--bw-dark-blue);
 	box-shadow: var(--shadow);
 }
-button:focus{
+.button:focus{
 	outline: none;
 }
-button:active{
+.button:active{
 	top:2px;
 	box-shadow: none;
 }
@@ -33,28 +33,28 @@ button:active{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }*/
-.secondary{
-	background: var(--light-opacity);
+.button--secondary{
+	background: var(--button-light-opacity);
 	border: var(--border-white);
 }
-.secondary:hover{
+.button--secondary:hover{
 	background-color: var(--dark-opacity);
 }
-.hover-go:hover:before{
+.button--hover-go:hover:before{
 	left: 85%;
 }
-.hover-go:before{
+.button--hover-go:before{
 	left: 160%;
     top: 0;
 }
-.hover-back:before{
+.button--hover-back:before{
 	left: -60%;
     top: 0;
 }
-.hover-back:hover:before{
+.button--hover-back:hover:before{
 	left:8%;
 }
-.hover-go:before, .hover-back:before {
+.button--hover-go:before, .button--hover-back:before {
     position: absolute;
     height: 100%;
     font-size: 125%;
@@ -64,10 +64,10 @@ button:active{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-.right:before {
+.button--right:before {
     content: "\f116";
 }
-.left:before{
+.button--left:before{
 	content: "\f116";
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -75,7 +75,7 @@ button:active{
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.hover-go:before, .hover-back:before{
+.button--hover-go:before, .button--hover-back:before{
     font-family: 'Bandwidth';
     speak: none;
     font-style: normal;
@@ -85,7 +85,7 @@ button:active{
     line-height: 3;
     -webkit-font-smoothing: antialiased;
 }
-.hover-go:after, .hover-back:after {
+.button--hover-go:after, .button--hover-back:after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -93,48 +93,48 @@ button:active{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-.light{
+.button--light{
 	color: var(--bw-dark-blue);
 	border:	var(--bw-dark-blue-border);
 }
-.light:hover{
+.button--light:hover{
 	color: #fff;
 	background-color: var(--bw-dark-blue);
 }
-.medium{
+.button--medium{
 	font-size: .8em;
 	padding:13px 40px;
 }
-.small{
+.button--small{
 	font-size: .6em;
 	padding:11px 30px;
 }
-.submit{
+.button--submit{
    background-color: var(--bw-green);
 }
-.submit:hover{
+.button--submit:hover{
 	background-color: var(--bw-dark-green);
 }
-.cancel{
+.button--cancel{
 	background-color: var(--bw-red);
 }
-.cancel:hover{
+.button--cancel:hover{
 	background-color: var(--bw-dark-red);
 }
-button:disabled{
+.button:disabled{
 	background-color: var(--disabled-grey);
 	color: var(--med-grey);
 	opacity: .5;
 }
-button:disabled:hover{
+.button:disabled:hover{
 	background-color: var(--disabled-grey);
 	color: var(--med-grey);
 	box-shadow: none;
 	cursor: inherit;
 	opacity: .5;
 }
-button:disabled:hover.right:before {
+.button:disabled:hover.right:before {
     content: "";
 }
-button:disabled:hover.left:before{
+.button:disabled:hover.left:before{
 	content: "";
