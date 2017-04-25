@@ -1,5 +1,5 @@
 .checkboxes input[type="checkbox"] {
-    margin-left: -9999px;
+    display: none;
 }
 .checkboxes input[type="checkbox"] + label {
     display: block;

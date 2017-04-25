@@ -5,7 +5,7 @@ div.toggle *:after {
 }
 /* hide input */
 div.toggle input[type="checkbox"]:empty {
-    margin-left: -9999px;
+    display: none;
 }
 /* basic label styles */
 div.toggle input[type="checkbox"]:empty ~ label {
