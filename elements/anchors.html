@@ -617,6 +617,45 @@
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-code</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-tag">code</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
 }
+<span class="hljs-selector-class">.dark</span>, <span class="hljs-selector-class">.blue</span>, <span class="hljs-selector-class">.green</span>, <span class="hljs-selector-class">.red</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}
+<span class="hljs-selector-class">.dark</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+}
+<span class="hljs-selector-class">.dark</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.dark</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+}
+<span class="hljs-selector-class">.blue</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
+}
+<span class="hljs-selector-class">.blue</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+}
+<span class="hljs-selector-class">.blue</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+}
+<span class="hljs-selector-class">.green</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-green);
+}
+<span class="hljs-selector-class">.green</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
+}
+<span class="hljs-selector-class">.green</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
+}
+<span class="hljs-selector-class">.red</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-red);
+}
+<span class="hljs-selector-class">.red</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-red);
+}
+<span class="hljs-selector-class">.red</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-red);
+}
 </code></pre>
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
 <p><a id="anchors.js" href="../source/js/anchors.js">anchors.js</a></p>
@@ -657,7 +696,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"anchors","level":"1.7","depth":1,"next":{"title":"navigation","level":"1.8","depth":1,"path":"elements/navigation.md","ref":"elements/navigation.md","articles":[]},"previous":{"title":"navigation-vmd","level":"1.6","depth":1,"path":"elements/navigation-vmd.md","ref":"elements/navigation-vmd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/anchors.md","mtime":"2017-04-13T19:02:26.756Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-13T19:03:19.181Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"anchors","level":"1.7","depth":1,"next":{"title":"navigation","level":"1.8","depth":1,"path":"elements/navigation.md","ref":"elements/navigation.md","articles":[]},"previous":{"title":"navigation-vmd","level":"1.6","depth":1,"path":"elements/navigation-vmd.md","ref":"elements/navigation-vmd.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/anchors.md","mtime":"2017-04-26T23:29:36.325Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-26T23:30:24.949Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

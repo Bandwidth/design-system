@@ -2,24 +2,24 @@ button.iconic{
 	display:inline-block;
 	position: relative;
 	height: 2.5em;
-    width: 2.5em;
-    border-radius: 50em;
-    background-color: var(--bw-blue);
-    border: none;
-    color: #fff;
+  width: 2.5em;
+  border-radius: 50em;
+  background-color: var(--bw-blue);
+  border: none;
+  color: #fff;
 	font-family: 'Overpass', sans-serif;
 	font-size: 2em;
 	cursor: pointer;
 	cursor: hand;
 	overflow: hidden;
 	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 button.iconic i{
 	-webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
 }
 button.iconic:hover > i{
 	font-size: 1.2em;
@@ -30,17 +30,17 @@ button.iconic:focus{
 button.iconic:active{
 	top:2px;
 }
-button.iconic.secondary{
+button.iconic.iconic--secondary{
 	background:rgba(0,188,236, 0.0);
 	border: var(--border-white);
 }
-button.iconic.light{
+button.iconic.iconic--light{
 	color: var(--bw-dark-blue);
 	border:	var(--bw-dark-blue-border);
 }
-button.iconic.medium{
+button.iconic.iconic--medium{
 	font-size: 1.5em;
 }
-button.iconic.small{
+button.iconic.iconic--small{
 	font-size: 1em;
 }
