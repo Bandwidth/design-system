@@ -21,6 +21,7 @@
 .tooltip__tooltiptext {
 	position: relative;
 	border: var(--bw-border);
+	white-space: nowrap;
 }
 .tooltip__tooltiptext:after, .tooltip__tooltiptext:before {
 	right: 100%;
