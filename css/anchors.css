@@ -57,16 +57,42 @@ a.anchor-img:after {
 a.anchor-code:hover code {
   background-color: var(--bw-light-blue);
 }
-.dark, .blue, .green, .red { padding: 10px; }
-.dark { background: var(--bw-dark-blue); }
-.dark a { color: #fff; }
-.dark a:after { background: #fff; }
-.blue { background: var(--bw-light-blue); }
-.blue a { color: var(--bw-dark-blue); }
-.blue a:after { background: var(--bw-dark-blue); }
-.green { background: var(--bw-light-green); }
-.green a { color: var(--bw-dark-green); }
-.green a:after { background: var(--bw-dark-green); }
-.red { background: var(--bw-light-red); }
-.red a { color: var(--bw-red); }
-.red a:after { background: var(--bw-red); }
+.dark, .blue, .green, .red {
+  padding: 10px;
+}
+.dark {
+  background: var(--bw-dark-blue);
+}
+.dark a {
+  color: #fff;
+}
+.dark a:after {
+  background: #fff;
+}
+.blue {
+  background: var(--bw-light-blue);
+}
+.blue a {
+  color: var(--bw-dark-blue);
+}
+.blue a:after {
+  background: var(--bw-dark-blue);
+}
+.green {
+  background: var(--bw-light-green);
+}
+.green a {
+  color: var(--bw-dark-green);
+}
+.green a:after {
+  background: var(--bw-dark-green);
+}
+.red {
+  background: var(--bw-light-red);
+}
+.red a {
+  color: var(--bw-red);
+}
+.red a:after {
+  background: var(--bw-red);
+}

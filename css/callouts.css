@@ -36,11 +36,6 @@
 .tooltip--hover:hover .tooltip__tooltiptext {
     visibility: visible;
 }
-/*.extraDetail{
-  font-size: .9em;
-  font-style: italic;
-  margin-bottom: 0px;
-}*/
 .tooltip--visible{
 	visibility: visible !important;
 }
