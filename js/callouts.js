@@ -1,3 +1,3 @@
-$('.click').click(function(){
-	$('.click .tooltiptext').toggleClass('visible');
+$('.tooltip--click').click(function(){
+	$('.tooltip--click .tooltip__tooltiptext').toggleClass('tooltip--visible');
 });

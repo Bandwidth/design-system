@@ -7,6 +7,6 @@ $('.message').click(function(){
 $('.smaller').click(function(){
   $('#smaller').show();
 });
-$('.close, .cancel').click(function(){
+$('.close, .button--cancel').click(function(){
   $(this).parents('.modalContainer').hide();
 });

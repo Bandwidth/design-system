@@ -1,5 +1,5 @@
 .radios input[type="radio"] {
-    margin-left: -9999px;
+    display: none;
 }
 .radios input[type="radio"] + label {
     display: block;
