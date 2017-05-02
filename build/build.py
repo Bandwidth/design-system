@@ -8,7 +8,6 @@ import os
 import os.path
 import strings
 import shutil
-import file_config
 
 abs_script_location = os.path.dirname(os.path.abspath(__file__))
 
