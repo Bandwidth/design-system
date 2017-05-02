@@ -1,6 +1,6 @@
 iframe_height = {
-    'accordions.html' : '200%',
-    'alerts.html' : '50px',
+    'accordions.html' : '',
+    'alerts.html' : '',
     'anchors.html' : '',
     'breadcrumbs.html' : '',
     'buttons-iconic.html' : '',
