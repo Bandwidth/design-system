@@ -100,7 +100,7 @@ def setup_elements_folder(directory):
 
 def build_index():
     elements = []
-    html_elements = glob.glob(relative_source_file_path + '*.html')
+    html_elements = sorted(glob.glob(relative_source_file_path + '*.html'))
     for html_element in html_elements:
         element = Element(html_element)
         element.save_md_file()
