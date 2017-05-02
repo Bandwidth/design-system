@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Bandwidth Style Guide | Product Navigation</title>
+<link href="font/css/styles.min.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/navigation-vmd.css" rel="stylesheet">
+</head>
+<body>
+  <!--/ [html] -->
+<!-- Start component HTML -->
+<header>
+    <div id="logo-wrap">
+        <a href="#" id="logo"><img src="images/bandwidth-mark.png" alt="Bandwidth logo" /><span class="product">Voice & Messaging Dashboard</span></a>
+        <div id="mobile-menu"><span id="current-page"></span><i class="icons8-menu"></i></div>
+    </div>
+    <div id="nav-wrap">
+        <nav id="utility">
+            <a href="#">Search</a>
+            <a href="#">Documentation</a>
+            <a href="#">Support</a>
+            <a href="#" class="has-secondary">Account <i class="icons8-visible"></i></a>
+            <div class="secondary">
+                <a href="#">Account Overview</a>
+                <a href="#">Notifications</a>
+                <a href="#">Billing</a>
+            </div>
+            <a href="#">Log out</a>
+        </nav>
+        <nav id="primary">
+            <a href="#" class="active has-secondary">Numbers <i class="icons8-visible"></i></a>
+            <div class="secondary">
+                <a href="#" class="active">My Numbers</a>
+                <a href="#">Buy</a>
+            </div>
+            <a href="#">Applications</a>
+            <a href="#">SIP Configuration</a>
+        </nav>
+    </div>
+</header>
+<section id="main" class=""><!--class="sidebar" will show secondary nav on left-->
+    <nav id="secondary"></nav>
+    <div id="main-content">
+        <h1>Navigation</h1>
+        <p>Pages have been rearranged or combined to form this new structure.</p>
+        <h3>PRIMARY &amp; SECONDARY</h3>
+        <ul>
+            <li><p><strong>Numbers</strong> includes:</p>
+                <ul>
+                    <li><strong>My Numbers</strong>, a place to view or delete your Bandwidth numbers</li>
+                    <li><strong>Buy</strong>, a place to order new numbers with a link to access past new number orders</li>
+                </ul>
+            </li>
+            <li><p><strong>Applications</strong> includes:</p>
+                <ul>
+                    <li>A single page to add, edit, or delete both voice and messaging applications as they exist today in Catapult</li>
+                </ul>
+            </li>
+            <li><p><strong>SIP Configuration</strong> includes:</p>
+                <ul>
+                    <li>A place to add, edit, or delete Domains and Endpoints. Move this under Account?</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>UTILITY</h3>
+        <ul>
+            <li><p><strong>Search:</strong> a link that will reveal a full-page search experience where you can type in phone numbers, application names, etc. Phone number searches will bring the user to the existing details page for numbers they own or suggest it's available for purchase.</p></li>
+            <li><p><strong>Documentation:</strong> an external link to API documentation</p></li>
+            <li><p><strong>Support:</strong></p>
+                <ul>
+                    <li>Short term - an external link to Bandwidth Support (Zendesk)</li>
+                    <li>Long term - opens a panel or full-page experience with ways to read FAQs, watch learning lab videos, live chat, etc.</li>
+                </ul>
+            </li>
+            <li><p><strong>Account</strong> includes:</p>
+                <ul>
+                    <li><strong>Account Overview</strong>, profile and API user information as it exists today</li>
+                    <li><strong>Notifications</strong>
+                        <ul>
+                            <li>Short term - an updated version of the existing experience</li>
+                            <li>Long term - this could be moved to the Account Overview</li>
+                        </ul>
+                    </li>
+                    <li><strong>Billing</strong>, shows current plan, usage history, and credit card payment</li>
+                </ul>
+            </li>
+            <li><p><strong>Log out</strong></p></li>
+        </ul>
+    </div>
+</section>
+<!-- End component HTML -->
+<!--! [html] -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/navigation-vmd.js"></script>
+</body>
+</html>
