@@ -1,6 +1,9 @@
-# Bandwidth Design System
+# Bandwidth Design System CDN
 
-This is the Bandwidth design system.
+Add this line of code into the `<head>` of your application and you're off!
+```bash
+<link href="https://d3l0ifulerbodr.cloudfront.net/main.css" rel="stylesheet">
+```
 
 ## Run Locally
 
