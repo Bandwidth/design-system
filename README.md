@@ -1,9 +1,10 @@
 # Bandwidth Design System CDN
 
-Add this line of code into the `<head>` of your application and you're off!
+Add this line of code into the `<head>` of your application and you're off! Just add the HTML code, with the classes that are on the right side of each component, and you will have the Bandwidth style!
 ```bash
 <link href="https://d3l0ifulerbodr.cloudfront.net/main.css" rel="stylesheet">
 ```
+
 
 ## Run Locally
 
