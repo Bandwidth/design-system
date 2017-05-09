@@ -2,7 +2,28 @@ $(document).ready(function() {
     // Finding total number of pages
     var pages = $('.pagination__item--page').length;
     var pagesLast = pages - 5;
+    var currentPage = $('.pagination__item--page.active').val();
 
+    if (currentPage == 1){
+      $('.pagination__item--prev').css('visibility','hidden');
+    } else if (currentPage > 1 && currentPage <= 5){
+      $('.pagination__item--page').slice(0,10).show();
+    } else if (currentPage > 5 && currentPage < pagesLast){
+      $('.pagination__item--page').hide();
+      $('.active').show();
+      $('.active').nextAll().slice(0,4).show();
+      $('.active').prevAll().slice(0,5).show();
+    } else if (currentPage >= pagesLast && currentPage < pages){
+      $('.pagination__item--page').hide();
+      $('.active').show();
+      $('.pagination__item--page').slice(-10).show();
+    } else if (currentPage == pages){
+      $('.pagination__item--page').hide();
+      $('.pagination__item--page').slice(-10).show();
+      $('.pagination__item--next').css('visibility','hidden');
+    }
+
+    console.log(currentPage);
     // Clicking on a page number
     $('.pagination__item--page').click(function(){
         $('.pagination__item--page').removeClass('active');
