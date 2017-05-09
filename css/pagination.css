@@ -1,0 +1,57 @@
+.pagination{
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline-block;
+  list-style: none;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+.pagination__item{
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border: var(--bw-border);
+  border-right: none;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+.pagination__item--page.active, .pagination__item--page.active:hover{
+  background-color: var(--bw-blue);
+  border-color: var(--bw-blue);
+  color: #fff;
+}
+.pagination__item.active + .pagination__item{
+  border-left-color: var(--bw-blue);
+}
+.pagination__item:hover{
+  background-color: var(--bw-light-blue);
+}
+.pagination__item:active{
+  background-color: var(--light-grey);
+}
+.pagination__item--prev{
+  border-radius: 3px 0px 0px 3px;
+}
+.pagination__item--prev:before{
+  content: "\f118";
+  font-family: 'Bandwidth';
+}
+.pagination__item--next{
+  border-radius: 0px 3px 3px 0px;
+  border-right: var(--bw-border);
+}
+.pagination__item--next:before{
+  content: "\f116";
+  font-family: 'Bandwidth';
+}
+.pagination--inner{
+  max-width: 300px;
+  max-height: 30px;
+  overflow: hidden;
+}
