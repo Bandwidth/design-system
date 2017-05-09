@@ -1,16 +1,19 @@
-# Bandwidth Design System CDN
+# Bandwidth Design System
+___
 
-Add this line of code into the `<head>` of your application and you're off! Just add the HTML code, with the classes that are on the right side of each component, and you will have the Bandwidth style!
+## CDN
+
+Add this line of code into the `<head>` of your application and you're off! Just use the classes and HTML structure from this guide and you will have the Bandwidth style!
 ```bash
 <link href="https://d3l0ifulerbodr.cloudfront.net/main.css" rel="stylesheet">
 ```
+___
 
-
-## Run Locally
+##RUN-LOCALLY
 
 To run the design system locally:
 
-### Prereqs
+#### Prereqs
 * [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
 * [Node & NPM](https://nodejs.org/en/download/)
 * [Python v2.7.*](https://www.python.org/downloads/)
