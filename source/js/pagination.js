@@ -23,7 +23,6 @@ $(document).ready(function() {
       $('.pagination__item--next').css('visibility','hidden');
     }
 
-    console.log(currentPage);
     // Clicking on a page number
     $('.pagination__item--page').click(function(){
         $('.pagination__item--page').removeClass('active');
