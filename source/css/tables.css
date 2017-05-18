@@ -19,6 +19,7 @@
 }
 .table-wrap table {
     width: 100%;
+    overflow-y: hidden;
 }
 .table-wrap th {
     color: #fff;
