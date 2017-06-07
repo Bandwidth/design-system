@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>code · GitBook</title>
+        <title>toasts · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="comments.html" />
+    <link rel="next" href="toggles.html" />
     
     
-    <link rel="prev" href="checkboxes.html" />
+    <link rel="prev" href="textareas.html" />
     
 
     </head>
@@ -229,7 +229,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11" data-path="code.html">
+        <li class="chapter " data-level="1.11" data-path="code.html">
             
                 <a href="code.html">
             
@@ -476,7 +476,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30" data-path="toasts.html">
+        <li class="chapter active" data-level="1.30" data-path="toasts.html">
             
                 <a href="toasts.html">
             
@@ -532,7 +532,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >code</a>
+        <a href=".." >toasts</a>
     </h1>
 </div>
 
@@ -547,67 +547,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="api-method"><div class="api-method-definition"><h1 id="code">Code</h1>
-<iframe src="../source/code.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
+                                <div class="api-method"><div class="api-method-definition"><h1 id="toasts">Toasts</h1>
+<iframe src="../source/toasts.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
 </div><div class="api-method-sample" data-lang="html" data-name="HTML/XML"><blockquote>
-<p><a id="code.html" href="../source/code.html">code.html</a></p>
+<p><a id="toasts.html" href="../source/toasts.html">toasts.html</a></p>
 </blockquote>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Start component HTML --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>true/false<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;get&quot;</span>&gt;</span>get<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>post<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;put&quot;</span>&gt;</span>put<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">code</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;delete&quot;</span>&gt;</span>delete<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">samp</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">samp</span>&gt;</span>
-<span class="hljs-comment">&lt;!-- End component HTML --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toast--container&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Put what you want here for a quick notification<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 </div><div class="api-method-sample" data-lang="css" data-name="CSS"><blockquote>
-<p><a id="code.css" href="../source/css/code.css">code.css</a></p>
+<p><a id="toasts.css" href="../source/css/toasts.css">toasts.css</a></p>
 </blockquote>
-<pre><code class="lang-css"><span class="hljs-selector-tag">code</span> {
-  <span class="hljs-attribute">padding</span>: .<span class="hljs-number">3em</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">85em</span>;
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">100</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--light-grey);
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Source Code Pro&apos;</span>, monospace;
-  <span class="hljs-attribute">direction</span>: ltr;
-  <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--bw-border);
-  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span> ease;
+<pre><code class="lang-css"><span class="hljs-selector-class">.toast--container</span>{
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">10000000</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-built_in">calc</span>(50% - 200px);
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">120px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--bw-border);
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
 }
-<span class="hljs-selector-tag">code</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-tag">code</span><span class="hljs-selector-pseudo">:after</span>{
-  <span class="hljs-attribute">letter-spacing</span>: -.<span class="hljs-number">2em</span>;
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;\00a0&quot;</span>;
-}
-<span class="hljs-selector-tag">code</span><span class="hljs-selector-class">.get</span>{
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-green) <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">text-transform</span>:uppercase;
-}
-<span class="hljs-selector-tag">code</span><span class="hljs-selector-class">.post</span>{
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-blue) <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">text-transform</span>:uppercase;
-}
-<span class="hljs-selector-tag">code</span><span class="hljs-selector-class">.put</span>{
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-purple) <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">text-transform</span>:uppercase;
-}
-<span class="hljs-selector-tag">code</span><span class="hljs-selector-class">.delete</span>{
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-red) <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span> <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">border</span>:none <span class="hljs-meta">!important</span>;
-  <span class="hljs-attribute">text-transform</span>:uppercase;
+<span class="hljs-selector-class">.toast--container</span> <span class="hljs-selector-tag">p</span>{
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
 }
 </code></pre>
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
-<p><a id="code.js" href="../source/js/code.js">code.js</a></p>
+<p><a id="toasts.js" href="../source/js/toasts.js">toasts.js</a></p>
 </blockquote>
 <pre><code class="lang-javascript"><span class="hljs-comment">// no specific JS for this component</span>
 </code></pre>
@@ -645,7 +616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"code","level":"1.11","depth":1,"next":{"title":"comments","level":"1.12","depth":1,"path":"elements/comments.md","ref":"elements/comments.md","articles":[]},"previous":{"title":"checkboxes","level":"1.10","depth":1,"path":"elements/checkboxes.md","ref":"elements/checkboxes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/code.md","mtime":"2017-06-07T17:35:19.862Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-07T17:36:17.234Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"toasts","level":"1.30","depth":1,"next":{"title":"toggles","level":"1.31","depth":1,"path":"elements/toggles.md","ref":"elements/toggles.md","articles":[]},"previous":{"title":"textareas","level":"1.29","depth":1,"path":"elements/textareas.md","ref":"elements/textareas.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/toasts.md","mtime":"2017-06-07T17:35:19.862Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-07T17:36:17.234Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

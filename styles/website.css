@@ -1,3 +1,6 @@
 .api-method-definition{
 	height: 250vh;
 }
+.api-method-definition h1{
+	display: none;
+}

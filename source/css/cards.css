@@ -25,15 +25,15 @@ body *, html *{
   border-top: var(--bw-border);
 }
 .left-image{
-    cursor: pointer;
+  cursor: pointer;
 }
 .left-image *{
   float: left;
   width: 50%;
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .clickable{
   cursor: pointer;
@@ -52,7 +52,6 @@ body *, html *{
   color: #fff;
   font-size: 1.2em;
   font-weight: 500;
-  /*text-shadow: 1px 1px 15px #484747;*/
   text-transform: uppercase;
   background-image: url("../images/blue.png");
   background-size: cover;

@@ -476,7 +476,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.30" data-path="toggles.html">
+        <li class="chapter " data-level="1.30" data-path="toasts.html">
+            
+                <a href="toasts.html">
+            
+                    
+                    toasts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="toggles.html">
             
                 <a href="toggles.html">
             
@@ -572,19 +585,19 @@
 <p><a id="anchors.css" href="../source/css/anchors.css">anchors.css</a></p>
 </blockquote>
 <pre><code class="lang-css"><span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-alternate-blue);
-  <span class="hljs-attribute">text-decoration</span>: none;
-  <span class="hljs-attribute">cursor</span>: pointer;
-  <span class="hljs-attribute">cursor</span>: hand;
-  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span> ease;
-  <span class="hljs-attribute">white-space</span>: nowrap;
-  <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-alternate-blue);
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">cursor</span>: hand;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span> ease;
+    <span class="hljs-attribute">white-space</span>: nowrap;
+    <span class="hljs-attribute">position</span>: relative;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:focus</span> {
-  <span class="hljs-attribute">outline</span>: none;
+    <span class="hljs-attribute">outline</span>: none;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-blue);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-blue);
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
@@ -606,68 +619,68 @@
     <span class="hljs-attribute">transition</span>: height .<span class="hljs-number">15s</span> ease, width .<span class="hljs-number">15s</span> ease, left .<span class="hljs-number">15s</span> ease, opacity <span class="hljs-number">0s</span> ease;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-external</span> <span class="hljs-selector-tag">i</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2em</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> .<span class="hljs-number">25em</span>;
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">transition</span>: right <span class="hljs-number">0.3s</span> ease <span class="hljs-number">0.2s</span>, opacity <span class="hljs-number">0.2s</span> ease;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2em</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> .<span class="hljs-number">25em</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">transition</span>: right <span class="hljs-number">0.3s</span> ease <span class="hljs-number">0.2s</span>, opacity <span class="hljs-number">0.2s</span> ease;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-external</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-tag">i</span> {
-  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
-  <span class="hljs-attribute">right</span>: -<span class="hljs-number">1.5em</span>;
-  <span class="hljs-attribute">transition</span>: right <span class="hljs-number">0.3s</span> ease, opacity <span class="hljs-number">0.2s</span> ease <span class="hljs-number">0.1s</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">right</span>: -<span class="hljs-number">1.5em</span>;
+    <span class="hljs-attribute">transition</span>: right <span class="hljs-number">0.3s</span> ease, opacity <span class="hljs-number">0.2s</span> ease <span class="hljs-number">0.1s</span>;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-i</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-code</span><span class="hljs-selector-pseudo">:after</span>,
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-img</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">display</span>: none;
+    <span class="hljs-attribute">display</span>: none;
 }
 <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.anchor-code</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-tag">code</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
 }
 <span class="hljs-selector-class">.dark</span>, <span class="hljs-selector-class">.blue</span>, <span class="hljs-selector-class">.green</span>, <span class="hljs-selector-class">.red</span> {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
 }
 <span class="hljs-selector-class">.dark</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
 }
 <span class="hljs-selector-class">.dark</span> <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
 }
 <span class="hljs-selector-class">.dark</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
 }
 <span class="hljs-selector-class">.blue</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-blue);
 }
 <span class="hljs-selector-class">.blue</span> <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
 }
 <span class="hljs-selector-class">.blue</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
 }
 <span class="hljs-selector-class">.green</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-green);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-green);
 }
 <span class="hljs-selector-class">.green</span> <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
 }
 <span class="hljs-selector-class">.green</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-green);
 }
 <span class="hljs-selector-class">.red</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-red);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-light-red);
 }
 <span class="hljs-selector-class">.red</span> <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-red);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-red);
 }
 <span class="hljs-selector-class">.red</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:after</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-red);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-red);
 }
 </code></pre>
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
@@ -709,7 +722,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"anchors","level":"1.4","depth":1,"next":{"title":"breadcrumbs","level":"1.5","depth":1,"path":"elements/breadcrumbs.md","ref":"elements/breadcrumbs.md","articles":[]},"previous":{"title":"alerts","level":"1.3","depth":1,"path":"elements/alerts.md","ref":"elements/alerts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/anchors.md","mtime":"2017-05-18T13:24:15.440Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-18T13:25:00.479Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"anchors","level":"1.4","depth":1,"next":{"title":"breadcrumbs","level":"1.5","depth":1,"path":"elements/breadcrumbs.md","ref":"elements/breadcrumbs.md","articles":[]},"previous":{"title":"alerts","level":"1.3","depth":1,"path":"elements/alerts.md","ref":"elements/alerts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/anchors.md","mtime":"2017-06-07T17:35:19.862Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-07T17:36:17.234Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
