@@ -40,53 +40,53 @@
 }
 .button--hover-go:before{
 	left: 160%;
-    top: 0;
+  top: 0;
 }
 .button--hover-back:before{
 	left: -60%;
-    top: 0;
+  top: 0;
 }
 .button--hover-back:hover:before{
 	left:8%;
 }
 .button--hover-go:before, .button--hover-back:before {
-    position: absolute;
-    height: 100%;
-    font-size: 125%;
-    line-height: 3.5;
-    color: #fff;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .button--right:before {
-    content: "\f116";
+  content: "\f116";
 }
 .button--left:before{
 	content: "\f116";
 	-webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .button--hover-go:before, .button--hover-back:before{
-    font-family: 'Bandwidth';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 3;
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Bandwidth';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 3;
+  -webkit-font-smoothing: antialiased;
 }
 .button--hover-go:after, .button--hover-back:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .button--light{
 	color: var(--bw-dark-blue);
@@ -105,7 +105,7 @@
 	padding:11px 30px;
 }
 .button--submit{
-   background-color: var(--bw-green);
+  background-color: var(--bw-green);
 }
 .button--submit:hover{
 	background-color: var(--bw-dark-green);
@@ -129,7 +129,7 @@
 	opacity: .5;
 }
 .button:disabled:hover.right:before {
-    content: "";
+  content: "";
 }
 .button:disabled:hover.left:before{
 	content: "";

@@ -2,21 +2,19 @@
 	cursor: pointer;
   border-top-left-radius: 0px !important;
 }
-/* Tooltip text */
 .tooltip__tooltiptext {
-		visibility: hidden;
-    max-width: 300px;
-    background-color: #fff;
-    color: inherit;
-    padding: 10px 15px;
-    border-radius: 3px;
-    border: var(--bw-border);
-    box-shadow: var(--shadow);
-    margin-left: var(--m);
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    margin-top: -10px;
+	visibility: hidden;
+  max-width: 300px;
+  background-color: #fff;
+  color: inherit;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: var(--bw-border);
+  box-shadow: var(--shadow);
+  margin-left: var(--m);
+  position: absolute;
+  z-index: 1;
+  margin-top: -10px;
 }
 .tooltip__tooltiptext {
 	position: relative;

@@ -72,51 +72,51 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0 var(--m);
 }
 .blocks:first-of-type{
-  padding-left: 0;
+    padding-left: 0;
 }
 .blocks:last-of-type{
-  padding-right: 0;
+    padding-right: 0;
 }
 .small-block{
-  max-width: 25px;
+    max-width: 25px;
 }
 .medium-block{
-  max-width: 55px;
+    max-width: 55px;
 }
 .half-block{
-  width: 50%;
+    width: 50%;
 }
 select{
-  padding: var(--m) var(--l) var(--m) var(--m);
-  border: var(--input-border);
-  border-radius: 0px;
-  width: 100%;
-  color: var(--med-grey);
-  font-family: 'Overpass', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.5em;
-  cursor: pointer;
-  box-shadow: none;
-  background-color: transparent;
-  background-image: url(../images/arrow.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 35px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    padding: var(--m) var(--l) var(--m) var(--m);
+    border: var(--input-border);
+    border-radius: 0px;
+    width: 100%;
+    color: var(--med-grey);
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    cursor: pointer;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 select:focus{
-  box-shadow: inset 0 -5px 0 var(--bw-light-blue);
-  border-color: var(--border-grey);
-  outline: none;
+    box-shadow: inset 0 -5px 0 var(--bw-light-blue);
+    border-color: var(--border-grey);
+    outline: none;
 }
 .expiration select{
-  display: inline-block;
-  width: 50%;
+    display: inline-block;
+    width: 50%;
 }
 .expiration select:first-of-type{
-  border-right: none;
+    border-right: none;
 }
