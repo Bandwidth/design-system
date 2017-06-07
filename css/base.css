@@ -101,25 +101,25 @@ a:active {
   color: var(--bw-blue);
 }
 a:after {
-    content: "";
-    background: var(--bw-alternate-blue);
-    border-radius: 2em;
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    bottom: -.1em;
-    left: 0;
-    transition: height .15s ease, width .15s ease, left .15s ease, opacity .15s ease .15s;
+  content: "";
+  background: var(--bw-alternate-blue);
+  border-radius: 2em;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -.1em;
+  left: 0;
+  transition: height .15s ease, width .15s ease, left .15s ease, opacity .15s ease .15s;
 }
 a:hover:after,
 a:focus:after,
 a.anchor-i:hover:after,
 a.anchor-i:focus:after {
-    height: calc(100% + .2em);
-    width: calc(100% + .6em);
-    left: -.3em;
-    opacity: .125;
-    transition: height .15s ease, width .15s ease, left .15s ease, opacity 0s ease;
+  height: calc(100% + .2em);
+  width: calc(100% + .6em);
+  left: -.3em;
+  opacity: .125;
+  transition: height .15s ease, width .15s ease, left .15s ease, opacity 0s ease;
 }
 a.anchor-external i {
   background: #fff;

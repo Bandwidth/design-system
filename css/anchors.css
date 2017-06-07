@@ -1,17 +1,17 @@
 a {
-  color: var(--bw-alternate-blue);
-  text-decoration: none;
-  cursor: pointer;
-  cursor: hand;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-  position: relative;
+    color: var(--bw-alternate-blue);
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position: relative;
 }
 a:focus {
-  outline: none;
+    outline: none;
 }
 a:active {
-  color: var(--bw-blue);
+    color: var(--bw-blue);
 }
 a:after {
     content: "";
@@ -33,66 +33,66 @@ a:focus:after {
     transition: height .15s ease, width .15s ease, left .15s ease, opacity 0s ease;
 }
 a.anchor-external i {
-  background: #fff;
-  border-radius: 2em;
-  padding: 0 .25em;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  opacity: 0;
-  transition: right 0.3s ease 0.2s, opacity 0.2s ease;
+    background: #fff;
+    border-radius: 2em;
+    padding: 0 .25em;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: right 0.3s ease 0.2s, opacity 0.2s ease;
 }
 a.anchor-external:hover i {
-  opacity: 1;
-  right: -1.5em;
-  transition: right 0.3s ease, opacity 0.2s ease 0.1s;
+    opacity: 1;
+    right: -1.5em;
+    transition: right 0.3s ease, opacity 0.2s ease 0.1s;
 }
 a.anchor-i:after {
-  height: 0;
+    height: 0;
 }
 a.anchor-code:after,
 a.anchor-img:after {
-  display: none;
+    display: none;
 }
 a.anchor-code:hover code {
-  background-color: var(--bw-light-blue);
+    background-color: var(--bw-light-blue);
 }
 .dark, .blue, .green, .red {
-  padding: 10px;
+    padding: 10px;
 }
 .dark {
-  background: var(--bw-dark-blue);
+    background: var(--bw-dark-blue);
 }
 .dark a {
-  color: #fff;
+    color: #fff;
 }
 .dark a:after {
-  background: #fff;
+    background: #fff;
 }
 .blue {
-  background: var(--bw-light-blue);
+    background: var(--bw-light-blue);
 }
 .blue a {
-  color: var(--bw-dark-blue);
+    color: var(--bw-dark-blue);
 }
 .blue a:after {
-  background: var(--bw-dark-blue);
+    background: var(--bw-dark-blue);
 }
 .green {
-  background: var(--bw-light-green);
+    background: var(--bw-light-green);
 }
 .green a {
-  color: var(--bw-dark-green);
+    color: var(--bw-dark-green);
 }
 .green a:after {
-  background: var(--bw-dark-green);
+    background: var(--bw-dark-green);
 }
 .red {
-  background: var(--bw-light-red);
+    background: var(--bw-light-red);
 }
 .red a {
-  color: var(--bw-red);
+    color: var(--bw-red);
 }
 .red a:after {
-  background: var(--bw-red);
+    background: var(--bw-red);
 }

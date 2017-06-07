@@ -1,0 +1,16 @@
+.toast--container{
+	position: fixed;
+	z-index: 10000000;
+	background: #fff;
+	margin-left: calc(50% - 200px);
+	width: 400px;
+	padding: 10px;
+	text-align: center;
+	display: block;
+	top: 120px;
+	border: var(--bw-border);
+	border-radius: 3px;
+}
+.toast--container p{
+	margin: 0;
+}
