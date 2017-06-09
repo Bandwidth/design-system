@@ -55,7 +55,7 @@ background-size:50px auto;
 .layout--three--column .layout__column:nth-child(2){
   border-right: var(--bw-border);
 }
-@media (max-width: 787px){
+/*@media (max-width: 787px){
   .layout{
     justify-content: center;
   }
@@ -68,4 +68,4 @@ background-size:50px auto;
     border: none;
     border-bottom: var(--bw-border);
   }
-}
+}*/
