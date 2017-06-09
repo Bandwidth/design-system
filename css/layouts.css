@@ -1,0 +1,71 @@
+.striped{
+  background: linear-gradient(90deg, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ccc;
+background-size:50px auto;
+}
+.layout{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.layout__column{
+  padding: 30px;
+  background-color: #fff;
+}
+.layout .layout__column:nth-child(1){
+    border-right: var(--bw-border);
+}
+/* Centered layout */
+.layout--centered{
+  justify-content: center;
+}
+.layout--centered .layout__column{
+  width: 60%;
+  max-width: 900px;
+}
+.layout--centered .layout__column.layout__column--bordered{
+  border: var(--bw-border);
+}
+/* Left pane layout */
+.layout--left--pane .layout__column:nth-child(1){
+  flex: initial;
+  min-width: 500px;
+}
+.layout--left--pane .layout__column:nth-child(2){
+  flex: 1;
+  background-color: var(--background-grey);
+}
+/* Right pane layout */
+.layout--right--pane .layout__column:nth-child(1){
+  flex: 1;
+  background-color: var(--background-grey);
+}
+.layout--right--pane .layout__column:nth-child(2){
+  flex: initial;
+  min-width: 500px;
+}
+/* 2 Column layout */
+.layout--two--column .layout__column{
+  flex: 1;
+}
+/* 3 Column layout */
+.layout--three--column .layout__column{
+  flex: 1;
+}
+.layout--three--column .layout__column:nth-child(2){
+  border-right: var(--bw-border);
+}
+@media (max-width: 787px){
+  .layout{
+    justify-content: center;
+  }
+  .layout:not(.layout--centered){
+    flex-direction: column;
+  }
+  .layout--centered .layout__column, .layout__column{
+    min-width: 0px !important;
+    flex-grow: 1;
+    border: none;
+    border-bottom: var(--bw-border);
+  }
+}
