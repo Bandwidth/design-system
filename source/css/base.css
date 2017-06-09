@@ -148,3 +148,14 @@ a.anchor-code:hover code,
 a.anchor-code:focus code {
   background-color: var(--bw-light-blue);
 }
+h1{
+  font-size: 2.5em;
+  font-weight: 100;
+  color: #00bef0;
+}
+h2{
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 14px 0;
+}

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>loader · GitBook</title>
+        <title>layouts · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="modals.html" />
+    <link rel="next" href="lists.html" />
     
     
-    <link rel="prev" href="lists.html" />
+    <link rel="prev" href="inputs.html" />
     
 
     </head>
@@ -294,7 +294,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="layouts.html">
+        <li class="chapter active" data-level="1.16" data-path="layouts.html">
             
                 <a href="layouts.html">
             
@@ -320,7 +320,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.18" data-path="loader.html">
+        <li class="chapter " data-level="1.18" data-path="loader.html">
             
                 <a href="loader.html">
             
@@ -545,7 +545,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >loader</a>
+        <a href=".." >layouts</a>
     </h1>
 </div>
 
@@ -560,92 +560,137 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="api-method"><div class="api-method-definition"><h1 id="loader">Loader</h1>
-<iframe src="../source/loader.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
+                                <div class="api-method"><div class="api-method-definition"><h1 id="layouts">Layouts</h1>
+<iframe src="../source/layouts.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
 </div><div class="api-method-sample" data-lang="html" data-name="HTML/XML"><blockquote>
-<p><a id="loader.html" href="../source/loader.html">loader.html</a></p>
+<p><a id="layouts.html" href="../source/layouts.html">layouts.html</a></p>
 </blockquote>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Start component HTML --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;loader&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;loader loader--large&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dark-loader-container&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;loader loader--dark&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Centered Layout<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout layout--centered&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column layout__column--bordered&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Centered column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;loader loader--dark loader--large&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dot&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Left Pane Layout<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout layout--left--pane&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Left Pane<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Container for left pane content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Right Pane Layout<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout layout--right--pane&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Container for right pane content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Right Pane<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>2 Column Layout<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout layout--two--column&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Left Column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Right Column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>3 Column Layout<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout layout--three--column&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Left Column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Center Column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout__column&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Right Column<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-comment">&lt;!-- End component HTML --&gt;</span>
 </code></pre>
 </div><div class="api-method-sample" data-lang="css" data-name="CSS"><blockquote>
-<p><a id="loader.css" href="../source/css/loader.css">loader.css</a></p>
+<p><a id="layouts.css" href="../source/css/layouts.css">layouts.css</a></p>
 </blockquote>
-<pre><code class="lang-css"><span class="hljs-selector-class">.loader</span>{
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">90px</span>;
+<pre><code class="lang-css"><span class="hljs-selector-class">.striped</span>{
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(90deg, rgba(255,255,255,0.1) <span class="hljs-number">50%</span>, <span class="hljs-built_in">rgba</span>(0,0,0,0) <span class="hljs-number">50%</span>, <span class="hljs-built_in">rgba</span>(0,0,0,0) <span class="hljs-number">0</span>), <span class="hljs-number">#ccc</span>;
+<span class="hljs-attribute">background-size</span>:<span class="hljs-number">50px</span> auto;
 }
-<span class="hljs-selector-class">.loader--large</span>{
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
+<span class="hljs-selector-class">.layout</span>{
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: row;
 }
-<span class="hljs-selector-class">.loader--large</span> <span class="hljs-selector-class">.dot</span>{
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+<span class="hljs-selector-class">.layout__column</span>{
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
 }
-<span class="hljs-selector-class">.loader--dark</span> <span class="hljs-selector-class">.dot</span>{
-    <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#fff</span>;
+<span class="hljs-selector-class">.layout</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(1)</span>{
+    <span class="hljs-attribute">border-right</span>: <span class="hljs-built_in">var</span>(--bw-border);
 }
-<span class="hljs-selector-class">.dark-loader-container</span>{
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
+<span class="hljs-comment">/* Centered layout */</span>
+<span class="hljs-selector-class">.layout--centered</span>{
+  <span class="hljs-attribute">justify-content</span>: center;
 }
-<span class="hljs-selector-class">.dot</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">var</span>(--bw-blue);
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-    <span class="hljs-attribute">float</span>: left;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span>;
-    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(0);
-    <span class="hljs-attribute">animation</span>: fx <span class="hljs-number">1000ms</span> ease infinite <span class="hljs-number">0ms</span>;
+<span class="hljs-selector-class">.layout--centered</span> <span class="hljs-selector-class">.layout__column</span>{
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>;
 }
-<span class="hljs-selector-class">.dot</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
-    <span class="hljs-attribute">animation</span>: fx <span class="hljs-number">1000ms</span> ease infinite <span class="hljs-number">300ms</span>;
+<span class="hljs-selector-class">.layout--centered</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-class">.layout__column--bordered</span>{
+  <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--bw-border);
 }
-<span class="hljs-selector-class">.dot</span><span class="hljs-selector-pseudo">:nth-child(3)</span>{
-    <span class="hljs-attribute">animation</span>: fx <span class="hljs-number">1000ms</span> ease infinite <span class="hljs-number">600ms</span>;
+<span class="hljs-comment">/* Left pane layout */</span>
+<span class="hljs-selector-class">.layout--left--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(1)</span>{
+  <span class="hljs-attribute">flex</span>: initial;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">500px</span>;
 }
-
-@<span class="hljs-keyword">keyframes</span> fx {
-    50% {
-        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(1);
-        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
-    }
-    100% {
-        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
-    }
+<span class="hljs-selector-class">.layout--left--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--background-grey);
 }
-</code></pre>
-</div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
-<p><a id="loader.js" href="../source/js/loader.js">loader.js</a></p>
-</blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">// no specific JS for this component</span>
+<span class="hljs-comment">/* Right pane layout */</span>
+<span class="hljs-selector-class">.layout--right--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(1)</span>{
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--background-grey);
+}
+<span class="hljs-selector-class">.layout--right--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
+  <span class="hljs-attribute">flex</span>: initial;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">500px</span>;
+}
+<span class="hljs-comment">/* 2 Column layout */</span>
+<span class="hljs-selector-class">.layout--two--column</span> <span class="hljs-selector-class">.layout__column</span>{
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+}
+<span class="hljs-comment">/* 3 Column layout */</span>
+<span class="hljs-selector-class">.layout--three--column</span> <span class="hljs-selector-class">.layout__column</span>{
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+}
+<span class="hljs-selector-class">.layout--three--column</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
+  <span class="hljs-attribute">border-right</span>: <span class="hljs-built_in">var</span>(--bw-border);
+}
+@<span class="hljs-keyword">media</span> (max-width: <span class="hljs-number">787px</span>){
+  <span class="hljs-selector-class">.layout</span>{
+    <span class="hljs-attribute">justify-content</span>: center;
+  }
+  <span class="hljs-selector-class">.layout</span><span class="hljs-selector-pseudo">:not(.layout--centered)</span>{
+    <span class="hljs-attribute">flex-direction</span>: column;
+  }
+  <span class="hljs-selector-class">.layout--centered</span> <span class="hljs-selector-class">.layout__column</span>, <span class="hljs-selector-class">.layout__column</span>{
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">0px</span> <span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">border</span>: none;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-built_in">var</span>(--bw-border);
+  }
+}
 </code></pre>
 </div></div></div>
 
@@ -681,7 +726,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"loader","level":"1.18","depth":1,"next":{"title":"modals","level":"1.19","depth":1,"path":"elements/modals.md","ref":"elements/modals.md","articles":[]},"previous":{"title":"lists","level":"1.17","depth":1,"path":"elements/lists.md","ref":"elements/lists.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/loader.md","mtime":"2017-06-09T15:38:05.108Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-09T15:38:57.082Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"layouts","level":"1.16","depth":1,"next":{"title":"lists","level":"1.17","depth":1,"path":"elements/lists.md","ref":"elements/lists.md","articles":[]},"previous":{"title":"inputs","level":"1.15","depth":1,"path":"elements/inputs.md","ref":"elements/inputs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/layouts.md","mtime":"2017-06-09T15:38:05.108Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-09T15:38:57.082Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
