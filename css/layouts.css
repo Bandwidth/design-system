@@ -54,7 +54,7 @@
 .layout--three--column .layout__column:nth-child(2){
   border-right: var(--bw-border);
 }
-/*@media (max-width: 787px){
+/*@media (max-width: 900px){
   .layout{
     justify-content: center;
   }
