@@ -3,11 +3,11 @@
 /* Variables */
 :root {
   /*Blue*/
-  --bw-blue: #00bcec;
+  --bw-blue: #00bef0;
   --bw-alternate-blue: #008db1;
   --bw-light-blue: #d9f5fc;
   --bw-blue-border: 1px solid #33c9f0;
-  --bw-dark-blue: #3a455c;
+  --bw-dark-blue: #004658;
   --bw-dark-blue-border: 1px solid var(--bw-dark-blue);
   --bw-db-border-thick: 2px solid var(--bw-dark-blue);
   /*Green*/
@@ -17,7 +17,7 @@
   --bw-green-border: 1px solid var(--bw-border-green);
   --bw-dark-green: #5a9f0b;
   /*Purple*/
-  --bw-purple: #a5639b;
+  --bw-purple: #a95adf;
   /*Red*/
   --bw-red: #e8562e;
   --bw-light-red: #fceae6;
@@ -30,7 +30,7 @@
   --border-white: 1px solid #fff;
   --disabled-grey: #e1e1e1;
   --input-border: 1px solid var(--disabled-grey);
-  --bw-orange: #e9572f;
+  --bw-orange: #ff673c;
   --bw-help-text: #7f8897;
   --dark-grey: #272B2D;
   --med-grey: #666;
@@ -66,7 +66,7 @@ body {
   color: var(--med-grey);
   font-family: 'Overpass', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.02em;
   line-height: 1.5em;
   background: #fff;
@@ -151,11 +151,33 @@ a.anchor-code:focus code {
 h1{
   font-size: 2.5em;
   font-weight: 100;
-  color: #00bef0;
+  color: var(--bw-blue);
 }
 h2{
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.25;
   margin: 14px 0;
+}
+h3{
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 1em;
+}
+h4{
+  font-size: 1.25em;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--bw-blue);
+}
+h5{
+  font-size: 1.15em;
+  font-weight: 800;
+}
+.colors--container{
+  display: flex;
+}
+.color--block{
+  flex: 1;
 }
