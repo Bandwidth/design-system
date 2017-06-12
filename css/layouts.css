@@ -1,6 +1,7 @@
 .striped{
   background: linear-gradient(90deg, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 0), #ccc;
-background-size:50px auto;
+  background-size:50px auto;
+  padding: 30px;
 }
 .layout{
   width: 100%;
@@ -29,7 +30,6 @@ background-size:50px auto;
 /* Left pane layout */
 .layout--left--pane .layout__column:nth-child(1){
   flex: initial;
-  min-width: 500px;
 }
 .layout--left--pane .layout__column:nth-child(2){
   flex: 1;
@@ -42,7 +42,6 @@ background-size:50px auto;
 }
 .layout--right--pane .layout__column:nth-child(2){
   flex: initial;
-  min-width: 500px;
 }
 /* 2 Column layout */
 .layout--two--column .layout__column{
