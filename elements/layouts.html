@@ -624,7 +624,8 @@
 </blockquote>
 <pre><code class="lang-css"><span class="hljs-selector-class">.striped</span>{
   <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(90deg, rgba(255,255,255,0.1) <span class="hljs-number">50%</span>, <span class="hljs-built_in">rgba</span>(0,0,0,0) <span class="hljs-number">50%</span>, <span class="hljs-built_in">rgba</span>(0,0,0,0) <span class="hljs-number">0</span>), <span class="hljs-number">#ccc</span>;
-<span class="hljs-attribute">background-size</span>:<span class="hljs-number">50px</span> auto;
+  <span class="hljs-attribute">background-size</span>:<span class="hljs-number">50px</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
 }
 <span class="hljs-selector-class">.layout</span>{
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
@@ -653,7 +654,6 @@
 <span class="hljs-comment">/* Left pane layout */</span>
 <span class="hljs-selector-class">.layout--left--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(1)</span>{
   <span class="hljs-attribute">flex</span>: initial;
-  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">500px</span>;
 }
 <span class="hljs-selector-class">.layout--left--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
   <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
@@ -666,7 +666,6 @@
 }
 <span class="hljs-selector-class">.layout--right--pane</span> <span class="hljs-selector-class">.layout__column</span><span class="hljs-selector-pseudo">:nth-child(2)</span>{
   <span class="hljs-attribute">flex</span>: initial;
-  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">500px</span>;
 }
 <span class="hljs-comment">/* 2 Column layout */</span>
 <span class="hljs-selector-class">.layout--two--column</span> <span class="hljs-selector-class">.layout__column</span>{
@@ -728,7 +727,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"layouts","level":"1.16","depth":1,"next":{"title":"lists","level":"1.17","depth":1,"path":"elements/lists.md","ref":"elements/lists.md","articles":[]},"previous":{"title":"inputs","level":"1.15","depth":1,"path":"elements/inputs.md","ref":"elements/inputs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/layouts.md","mtime":"2017-06-09T18:05:25.834Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-09T18:06:27.048Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"layouts","level":"1.16","depth":1,"next":{"title":"lists","level":"1.17","depth":1,"path":"elements/lists.md","ref":"elements/lists.md","articles":[]},"previous":{"title":"inputs","level":"1.15","depth":1,"path":"elements/inputs.md","ref":"elements/inputs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/layouts.md","mtime":"2017-06-12T14:42:21.500Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-12T14:43:26.404Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
