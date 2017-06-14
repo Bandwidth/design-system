@@ -1,0 +1,27 @@
+/* no specific CSS for this component */
+.list--item{
+  width: 100%;
+  border-bottom: var(--input-border);
+}
+.list--item *{
+  margin: 0;
+}
+.list--item--header{
+  background-color: var(--disabled-grey);
+  padding: 5px 30px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.list--item--header__large{
+  background-color: #fff;
+  padding: 30px;
+  text-transform: capitalize;
+}
+.list--item--pane{
+  padding: 15px 30px;
+}
+.list--item--pane__active{
+  background-color: var(--background-grey);
+  color: var(--bw-blue);
+}
