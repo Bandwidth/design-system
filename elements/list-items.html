@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>radios · GitBook</title>
+        <title>list-items · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="sort-options.html" />
+    <link rel="next" href="lists.html" />
     
     
-    <link rel="prev" href="radio-groups.html" />
+    <link rel="prev" href="layouts.html" />
     
 
     </head>
@@ -320,7 +320,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="list-items.html">
+        <li class="chapter active" data-level="1.18" data-path="list-items.html">
             
                 <a href="list-items.html">
             
@@ -411,7 +411,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.25" data-path="radios.html">
+        <li class="chapter " data-level="1.25" data-path="radios.html">
             
                 <a href="radios.html">
             
@@ -571,7 +571,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >radios</a>
+        <a href=".." >list-items</a>
     </h1>
 </div>
 
@@ -586,98 +586,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="api-method"><div class="api-method-definition"><h1 id="radios">Radios</h1>
-<iframe src="../source/radios.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
+                                <div class="api-method"><div class="api-method-definition"><h1 id="list-items">List-Items</h1>
+<iframe src="../source/list-items.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
 </div><div class="api-method-sample" data-lang="html" data-name="HTML/XML"><blockquote>
-<p><a id="radios.html" href="../source/radios.html">radios.html</a></p>
+<p><a id="list-items.html" href="../source/list-items.html">list-items.html</a></p>
 </blockquote>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Start component HTML --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radios&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio clearfix&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-option-1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;something&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radio-option-1&quot;</span>&gt;</span>Check me<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio clearfix&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-option-2&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;something&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radio-option-2&quot;</span>&gt;</span>Or me<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio clearfix&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-option-3&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;something&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radio-option-3&quot;</span>&gt;</span>I&apos;m already checked<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio clearfix&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;radio-option-4&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;something&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;radio-option-4&quot;</span>&gt;</span>But not me<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list--item list--item--header list--item--header__large&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Top Level Header<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list--item list--item--header&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>List view header<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list--item list--item--pane&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Item main label<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Item subheading<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list--item list--item--pane list--item--pane__active&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Active Item main label<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Item subheading<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-comment">&lt;!-- End component HTML --&gt;</span>
 </code></pre>
 </div><div class="api-method-sample" data-lang="css" data-name="CSS"><blockquote>
-<p><a id="radios.css" href="../source/css/radios.css">radios.css</a></p>
+<p><a id="list-items.css" href="../source/css/list-items.css">list-items.css</a></p>
 </blockquote>
-<pre><code class="lang-css"><span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span> {
-    <span class="hljs-attribute">display</span>: none;
+<pre><code class="lang-css"><span class="hljs-comment">/* no specific CSS for this component */</span>
+<span class="hljs-selector-class">.list--item</span>{
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-built_in">var</span>(--input-border);
 }
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span> + <span class="hljs-selector-tag">label</span> {
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">cursor</span>: pointer;
-    <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.2em</span> <span class="hljs-number">0</span> <span class="hljs-number">0.2em</span> <span class="hljs-number">2.1em</span>;
-    <span class="hljs-attribute">float</span>: left;
-    <span class="hljs-attribute">-webkit-user-select</span>: none;
-    <span class="hljs-attribute">-moz-user-select</span>: none;
-    <span class="hljs-attribute">-ms-user-select</span>: none;
-    <span class="hljs-attribute">user-select</span>: none;
+<span class="hljs-selector-class">.list--item</span> *{
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
 }
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:before</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Bandwidth&quot;</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">1.3em</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">1.3em</span>;
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">top</span>: <span class="hljs-built_in">calc</span>(.2em + 2px);
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">2px</span>;
-    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+<span class="hljs-selector-class">.list--item--header</span>{
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--disabled-grey);
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">700</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
 }
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-pseudo">:checked</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:before</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;\f19f&quot;</span>;
+<span class="hljs-selector-class">.list--item--header__large</span>{
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">text-transform</span>: capitalize;
 }
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
-    <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--bw-db-border-thick);
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2em</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">1.3em</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">1.3em</span>;
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">top</span>: .<span class="hljs-number">2em</span>;
-    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span> ease;
+<span class="hljs-selector-class">.list--item--pane</span>{
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">30px</span>;
 }
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-pseudo">:checked</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-dark-blue);
-}
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-pseudo">:active</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">border-color</span>: <span class="hljs-built_in">var</span>(--bw-alternate-blue);
-}
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-pseudo">:checked</span><span class="hljs-selector-pseudo">:active</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">var</span>(--bw-alternate-blue);
-}
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-pseudo">:focus</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-pseudo">:hover)</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:after</span> {
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-built_in">var</span>(--bw-light-blue);
-}
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-attr">[disabled]</span> + <span class="hljs-selector-tag">label</span> {
-    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
-}
-<span class="hljs-selector-class">.radios</span> <span class="hljs-selector-tag">input</span><span class="hljs-selector-attr">[type=&quot;radio&quot;]</span><span class="hljs-selector-attr">[disabled]</span> + <span class="hljs-selector-tag">label</span><span class="hljs-selector-pseudo">:before</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-help-text);
+<span class="hljs-selector-class">.list--item--pane__active</span>{
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--background-grey);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--bw-blue);
 }
 </code></pre>
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
-<p><a id="radios.js" href="../source/js/radios.js">radios.js</a></p>
+<p><a id="list-items.js" href="../source/js/list-items.js">list-items.js</a></p>
 </blockquote>
 <pre><code class="lang-javascript"><span class="hljs-comment">// no specific JS for this component</span>
 </code></pre>
@@ -715,7 +678,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"radios","level":"1.25","depth":1,"next":{"title":"sort-options","level":"1.26","depth":1,"path":"elements/sort-options.md","ref":"elements/sort-options.md","articles":[]},"previous":{"title":"radio-groups","level":"1.24","depth":1,"path":"elements/radio-groups.md","ref":"elements/radio-groups.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/radios.md","mtime":"2017-06-14T18:43:33.910Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-14T18:44:21.032Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"list-items","level":"1.18","depth":1,"next":{"title":"lists","level":"1.19","depth":1,"path":"elements/lists.md","ref":"elements/lists.md","articles":[]},"previous":{"title":"layouts","level":"1.17","depth":1,"path":"elements/layouts.md","ref":"elements/layouts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/list-items.md","mtime":"2017-06-14T18:43:33.910Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-14T18:44:21.032Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
