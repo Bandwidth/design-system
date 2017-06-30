@@ -584,6 +584,33 @@ a.anchor-img:after {
 a.anchor-code:hover code {
   background-color: var(--bw-light-blue);
 }
+h1{
+  font-size: 2.5em;
+  font-weight: 100;
+  color: var(--bw-blue);
+}
+h2{
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 14px 0;
+}
+h3{
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 1em;
+}
+h4{
+  font-size: 1.25em;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--bw-blue);
+}
+h5{
+  font-size: 1.15em;
+  font-weight: 800;
+}
 .dark, .blue, .green, .red {
   padding: 10px;
 }
@@ -2807,7 +2834,6 @@ div.toggle.right.float input[type="checkbox"]:empty ~ label {
 .dot:nth-child(3){
 	animation: fx 1000ms ease infinite 600ms;
 }
-
 @keyframes fx {
 	50% {
 		transform: scale(1);
@@ -2817,7 +2843,32 @@ div.toggle.right.float input[type="checkbox"]:empty ~ label {
 		opacity: 0;
 	}
 }
-
+.list--item{
+  width: 100%;
+  border-bottom: var(--input-border);
+}
+.list--item *{
+  margin: 0;
+}
+.list--item--header{
+  background-color: var(--disabled-grey);
+  padding: 5px 30px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.list--item--header__large{
+  background-color: #fff;
+  padding: 30px;
+  text-transform: capitalize;
+}
+.list--item--pane{
+  padding: 15px 30px;
+}
+.list--item--pane__active{
+  background-color: var(--background-grey);
+  color: var(--bw-blue);
+}
 @media all and (max-width:999px) {
     nav#utility {
         border-top: 1px solid rgba(255, 255, 255, 0.5);
