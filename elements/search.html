@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>toasts · GitBook</title>
+        <title>search · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -67,10 +67,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="toggles.html" />
+    <link rel="next" href="side-bar-list-items.html" />
     
     
-    <link rel="prev" href="textareas.html" />
+    <link rel="prev" href="radios.html" />
     
 
     </head>
@@ -411,7 +411,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.25" data-path="search.html">
+        <li class="chapter active" data-level="1.25" data-path="search.html">
             
                 <a href="search.html">
             
@@ -528,7 +528,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.34" data-path="toasts.html">
+        <li class="chapter " data-level="1.34" data-path="toasts.html">
             
                 <a href="toasts.html">
             
@@ -584,7 +584,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >toasts</a>
+        <a href=".." >search</a>
     </h1>
 </div>
 
@@ -599,40 +599,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="api-method"><div class="api-method-definition"><h1 id="toasts">Toasts</h1>
-<iframe src="../source/toasts.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
+                                <div class="api-method"><div class="api-method-definition"><h1 id="search">Search</h1>
+<iframe src="../source/search.html" scrolling="no" frameborder="0" height="100%" width="100%" id="elementIframe"></iframe></div><div class="api-method-code"><div class="api-method-example"><p>HTML, CSS, &amp; JS</p>
 </div><div class="api-method-sample" data-lang="html" data-name="HTML/XML"><blockquote>
-<p><a id="toasts.html" href="../source/toasts.html">toasts.html</a></p>
+<p><a id="search.html" href="../source/search.html">search.html</a></p>
 </blockquote>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Start component HTML --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toast--container&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Put what you want here for a quick notification<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;number-search&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-input clearfix&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;input-text&quot;</span>&gt;</span>Search instructions &amp;nbsp;&amp;nbsp;|&amp;nbsp;&amp;nbsp; <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Alternate link?<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;input-text&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Search description here&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;searchButton&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconic&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons8-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- End component HTML --&gt;</span>
 </code></pre>
 </div><div class="api-method-sample" data-lang="css" data-name="CSS"><blockquote>
-<p><a id="toasts.css" href="../source/css/toasts.css">toasts.css</a></p>
+<p><a id="search.css" href="../source/css/search.css">search.css</a></p>
 </blockquote>
-<pre><code class="lang-css"><span class="hljs-selector-class">.toast--container</span>{
-    <span class="hljs-attribute">position</span>: fixed;
-    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">10000000</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
-    <span class="hljs-attribute">margin-left</span>: <span class="hljs-built_in">calc</span>(50% - 200px);
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">top</span>: <span class="hljs-number">120px</span>;
-    <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--bw-border);
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
+<pre><code class="lang-css"><span class="hljs-selector-id">#number-search</span> <span class="hljs-selector-tag">input</span>{
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
 }
-<span class="hljs-selector-class">.toast--container</span> <span class="hljs-selector-tag">p</span>{
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+<span class="hljs-selector-id">#number-search</span> <span class="hljs-selector-tag">button</span>{
+  <span class="hljs-attribute">float</span>: right;
+  <span class="hljs-attribute">margin</span>: -<span class="hljs-number">68px</span> -<span class="hljs-number">30px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5em</span>;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">3em</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3em</span>;
+}
+<span class="hljs-selector-id">#number-search</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:disabled</span>{
+  <span class="hljs-attribute">margin</span>: -<span class="hljs-number">57px</span> <span class="hljs-number">5px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(255, 255, 255, 0);
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#484848</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">2em</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">2em</span>;
+    <span class="hljs-attribute">cursor</span>: inherit;
+}
+<span class="hljs-selector-id">#searchButton</span><span class="hljs-selector-pseudo">:disabled</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-tag">i</span>{
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>;
+}
+<span class="hljs-selector-id">#searchButton</span><span class="hljs-selector-pseudo">:disabled</span><span class="hljs-selector-pseudo">:active</span>{
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0px</span>;
 }
 </code></pre>
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><blockquote>
-<p><a id="toasts.js" href="../source/js/toasts.js">toasts.js</a></p>
+<p><a id="search.js" href="../source/js/search.js">search.js</a></p>
 </blockquote>
-<pre><code class="lang-javascript"><span class="hljs-comment">// no specific JS for this component</span>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> searchField = $(<span class="hljs-string">&apos;#number-search &gt; .form-input &gt; input&apos;</span>);
+
+searchField.on(<span class="hljs-string">&apos;change paste keyup&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">if</span> ($(<span class="hljs-keyword">this</span>).val().length &gt;= <span class="hljs-number">3</span>){
+        $(<span class="hljs-string">&apos;#searchButton&apos;</span>).attr(<span class="hljs-string">&apos;disabled&apos;</span>, <span class="hljs-literal">false</span>);
+    } <span class="hljs-keyword">else</span> {
+        $(<span class="hljs-string">&apos;#searchButton&apos;</span>).attr(<span class="hljs-string">&apos;disabled&apos;</span>, <span class="hljs-literal">true</span>);
+    };
+});
+
+$(<span class="hljs-string">&apos;#searchButton&apos;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">&apos;#results-container&apos;</span>).show();
+    $(<span class="hljs-string">&apos;#buy-numbers &gt; h1, #number-search&apos;</span>).hide();
+    $(<span class="hljs-string">&apos;#input-text&apos;</span>).val(<span class="hljs-string">&quot;&quot;</span>);
+    $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">&apos;disabled&apos;</span>, <span class="hljs-literal">true</span>);
+});
 </code></pre>
 </div></div></div>
 
@@ -668,7 +697,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"toasts","level":"1.34","depth":1,"next":{"title":"toggles","level":"1.35","depth":1,"path":"elements/toggles.md","ref":"elements/toggles.md","articles":[]},"previous":{"title":"textareas","level":"1.33","depth":1,"path":"elements/textareas.md","ref":"elements/textareas.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/toasts.md","mtime":"2017-07-05T11:56:12.504Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-05T11:57:06.234Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"search","level":"1.25","depth":1,"next":{"title":"side-bar-list-items","level":"1.26","depth":1,"path":"elements/side-bar-list-items.md","ref":"elements/side-bar-list-items.md","articles":[]},"previous":{"title":"radios","level":"1.24","depth":1,"path":"elements/radios.md","ref":"elements/radios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-codeblock","ace","theme-api","include","copy-code-button"],"pluginsConfig":{"ace":{},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"full","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"elements/search.md","mtime":"2017-07-05T11:56:12.504Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-05T11:57:06.234Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
