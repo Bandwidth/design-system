@@ -1,0 +1,25 @@
+#number-search input{
+  margin-bottom: 10px;
+}
+#number-search button{
+  float: right;
+  margin: -68px -30px 0px 0px;
+  font-size: 1.5em;
+  position: relative;
+  height: 3em;
+  width: 3em;
+}
+#number-search button:disabled{
+  margin: -57px 5px 0px 0px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #484848;
+  height: 2em;
+  width: 2em;
+	cursor: inherit;
+}
+#searchButton:disabled:hover i{
+  font-size: 1em;
+}
+#searchButton:disabled:active{
+  top: 0px;
+}
