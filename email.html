@@ -1,0 +1,1550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--/ [html] -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--[if !mso]><!-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+body {
+	color: #3A455C;
+	background-color: #FFFFFF;
+	Margin: 0;
+	padding: 0;
+	min-width: 100%;
+	font-weight: 200;
+}
+table {
+	border-spacing: 0;
+}
+td {
+	color: #3A455C;
+	font-family: 'Overpass', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0;
+}
+.white {
+	color: #ffffff;
+}
+img {
+	font-family: 'Overpass', sans-serif;
+	font-size: 16px;
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+}
+p {
+	Margin: 0 0 16px;
+}
+br {
+	font-size: 16px;
+	line-height: 16px;
+}
+a {
+	color: #00BCEC;
+	text-decoration: underline;
+}
+i {
+	font-style: italic;
+}
+b {
+	font-weight: bold;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+.webkit {
+	max-width: 600px;
+}
+.outer {
+	border: 1px solid #E1E1E1;
+	Margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+.pad-20 {
+	padding: 20px;
+}
+.pad-10 {
+	padding: 10px;
+}
+.fill-width {
+	width: 100%;
+}
+.va-top {
+	vertical-align: top !important;
+}
+.va-middle {
+	vertical-align: middle !important;
+}
+.va-bottom {
+	vertical-align: bottom !important;
+}
+.hr {
+	font-size: 1px;
+	line-height: 1px;
+	background: none;
+	border-top: 1px solid #e1e1e1;
+	Margin: 0 0 8px;
+	height: 1px;
+	width: 100%;
+}
+.h1 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	line-height: 40px;
+	Margin-bottom: 5px;
+	color: #00bcec;
+}
+.h2 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 35px;
+	Margin-bottom: 10px;
+}
+.h3 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 20px;
+	Margin-bottom: 10px;
+}
+.h4 {
+	font-family: 'Overpass', sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 16px;
+	text-transform: uppercase;
+	Margin-bottom: 10px;
+	color: #00bcec;
+}
+.list {
+	Margin: 0 0 16px;
+}
+.list .li {
+	padding: 0 0 0 10px;
+	vertical-align: top !important;
+}
+.list .li p {
+	Margin: 0 0 8px;
+}
+.button-table {
+	Margin: auto;
+}
+.button-td {
+	text-align: center;
+	background: #00bcec;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+.button-a {
+	color: #ffffff;
+	line-height: 1.1;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: #00bcec;
+	border: 15px solid #00bcec;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	padding: 0 25px;
+	display: block;
+}
+.columns {
+	font-size: 0;
+}
+.column-25,
+.column-33,
+.column-34,
+.column-40,
+.column-50,
+.column-60,
+.column-67,
+.column-75,
+.column-33-fixed,
+.column-50-fixed,
+.column-67-fixed {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+.column-25 {
+	max-width: 25%;
+}
+.column-33 {
+	max-width: 33%;
+}
+.column-34 {
+	max-width: 34%;
+}
+.column-40 {
+	max-width: 40%;
+}
+.column-50 {
+	max-width: 50%;
+}
+.column-60 {
+	max-width: 60%;
+}
+.column-67 {
+	max-width: 67%;
+}
+.column-75 {
+	max-width: 75%;
+}
+.column-33-fixed {
+	max-width: 186px;
+}
+.column-50-fixed {
+	max-width: 279px;
+}
+.column-67-fixed {
+	max-width: 372px;
+}
+@media screen and (max-width: 440px) {
+	.column-25,
+	.column-33,
+	.column-34,
+	.column-40,
+	.column-50,
+	.column-60,
+	.column-67,
+	.column-75,
+	.column-33-fixed,
+	.column-50-fixed,
+	.column-67-fixed {
+		max-width: 100% !important;
+	}
+	.columns img {
+		max-width: 100% !important;
+	}
+}
+    </style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<center class="wrapper">
+		<div class="webkit">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="600" align="center">
+			<tr>
+			<td>
+			<![endif]-->
+			<table class="outer" align="center">
+				<tr>
+					<td class="fill-width pad-20" bgcolor="#1f2a44">
+						<table width="100%">
+							<tr>
+								<td class="pad-10 white" align="center">
+									<p class="h4">The Official</p>
+									<p class="h1">Bandwidth</p>
+									<p class="h2">Responsive Email Template</p>
+									<!--[if (gte mso 9)|(IE)]>
+									<table width="100%">
+									<tr>
+									<td width="67%" valign="top">
+									<![endif]-->
+									<div class="column-67">
+										<table width="100%">
+											<tr>
+												<td class="pad-10 white" align="center">
+													<p class="hr">&nbsp;</p>
+													<p class="h3"><i>Have fun!</i></p>
+													<p class="hr">&nbsp;</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+									<table width="100%">
+										<tr>
+											<td class="pad-10">
+												<table align="center" class="button-table">
+													<tr>
+														<td class="button-td">
+															<a href="#" class="button-a">
+																<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Main Call-to-action<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+															</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20">
+						<table width="100%">
+							<tr>
+								<td class="pad-10">
+									<p class="h1">h1. Lorem ipsum dolor sit amet</p>
+									<p class="h2">h2. Lorem ipsum dolor sit amet</p>
+									<p class="h3">h3. Lorem ipsum dolor sit amet</p>
+									<p class="h4">h4. Lorem ipsum dolor sit amet</p>
+									<p>Paragraph: <b>I'm bold,</b> <i>I'm italic,</i> and <a href="#">I'm a link</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere.</p>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list">
+										<tr>
+											<td class="li"><p>&bull;</p></td>
+											<td class="li"><p>List item A</p></td>
+										</tr>
+										<tr>
+											<td class="li"><p>&bull;</p></td>
+											<td class="li"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></td>
+										</tr>
+										<tr>
+											<td class="li"><p>&bull;</p></td>
+											<td class="li"><p>List item C</p></td>
+										</tr>
+									</table>
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list">
+										<tr>
+											<td class="li"><p>1.</p></td>
+											<td class="li"><p>List item 1</p></td>
+										</tr>
+										<tr>
+											<td class="li"><p>2.</p></td>
+											<td class="li"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></td>
+										</tr>
+										<tr>
+											<td class="li"><p>3.</p></td>
+											<td class="li"><p>List item 3</p></td>
+										</tr>
+									</table>
+									<p class="hr">&nbsp;</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10">
+									<table align="center" class="fill-width button-table">
+										<tr>
+											<td class="button-td">
+												<a href="#" class="button-a">
+													<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->This button will fill its container<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10">
+									<table align="left" class="button-table">
+										<tr>
+											<td class="button-td">
+												<a href="#" class="button-a">
+													<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Left Aligned<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10">
+									<table align="center" class="button-table">
+										<tr>
+											<td class="button-td">
+												<a href="#" class="button-a">
+													<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Centered<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10">
+									<table align="right" class="button-table">
+										<tr>
+											<td class="button-td">
+												<a href="#" class="button-a">
+													<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Right Aligned<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+												</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20" bgcolor="#1f2a44">
+						<table width="100%">
+							<tr>
+								<td class="pad-10 white" align="center">
+									<a href="http://www.bandwidth.com/"><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gVlJXOVRVdWdlNU0" width="171" height="36" alt="Bandwidth logo" /></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width">
+						<table width="100%">
+							<tr>
+								<td align="center">
+									<img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gQnNpaE0wRHB3cFU" width="598" alt="Retina image" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20">
+						<table width="100%">
+							<tr>
+								<td class="pad-10">
+									<p class="h2">Fluid cells</p>
+									<p><i>These blocks are percentage-based so they'll work for any email width. (This one's set to 600px.) They'll also stack in email clients that support media queries. (You can adjust the <b>max-width: 440px;</b> breakpoint CSS in &lt;head&gt;.) For those email clients that don't support media queries, like Gmail, each block will maintain its set width, so be careful using smaller blocks for wide content.</i></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="75%" valign="top">
+						<![endif]-->
+						<div class="column-75">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">75%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column-50">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">50%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column-50">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">50%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column-50">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">50%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="75%" valign="top">
+						<![endif]-->
+						<div class="column-75">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">75%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="25%" valign="top">
+						<![endif]-->
+						<div class="column-25">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">25%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="middle">
+						<![endif]-->
+						<div class="column-50 va-middle">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">50%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="middle">
+						<![endif]-->
+						<div class="column-50 va-middle">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">50%</p>
+													<p>Vertically align in the middle</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="left">
+													<p class="h3">33%</p>
+													<p>Left align this stuff.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="34%" valign="top">
+						<![endif]-->
+						<div class="column-34">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p class="h3">34%</p>
+													<p>Center align this stuff.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="right">
+													<p class="h3">33%</p>
+													<p>Right align this stuff.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">33%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="67%" valign="top">
+						<![endif]-->
+						<div class="column-67">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">67%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="67%" valign="top">
+						<![endif]-->
+						<div class="column-67">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">67%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">33%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="40%" valign="top">
+						<![endif]-->
+						<div class="column-40">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">40%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="60%" valign="top">
+						<![endif]-->
+						<div class="column-60">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">60%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="60%" valign="top">
+						<![endif]-->
+						<div class="column-60">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">60%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="40%" valign="top">
+						<![endif]-->
+						<div class="column-40">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td>
+													<p class="h3">40%</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width" background="https://drive.google.com/uc?id=0B-JLgTBg6L1gbmJuOVR0LUJUVHc" bgcolor="#6c6c70" width="598">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:598px;">
+						<v:fill type="tile" src="https://drive.google.com/uc?id=0B-JLgTBg6L1gbmJuOVR0LUJUVHc" color="#6c6c70" />
+						<v:textbox style="mso-fit-shape-to-text:true;v-text-anchor:middle;" inset="30px,0,-10px,0">
+						<![endif]-->
+						<table width="100%">
+							<tr>
+								<td class="fill-width pad-20">
+									<table width="100%">
+										<tr>
+											<td class="pad-10 white" align="center">
+												<p class="h3">This box has a background image and a <b>FLUID</b> height.</p>
+												<p><i>The background may repeat on small devices if there's too much content.</i></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!--[if gte mso 9]>
+						<p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+						</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20" bgcolor="#1f2a44">
+						<table width="100%">
+							<tr>
+								<td class="pad-10 white" align="center">
+									<p class="h3">This box has a solid background and stacking calls-to-action.</p>
+									<p><i>To get smaller buttons closer together, put them in 33%-width boxes.</i></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="columns" align="center">
+									<!--[if (gte mso 9)|(IE)]>
+									<table width="100%">
+									<tr>
+									<td width="33%" valign="middle">
+									<![endif]-->
+									<div class="column-33-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Button 1<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td><td width="33%" valign="middle">
+									<![endif]-->
+									<div class="column-33-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Button 2<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10 white" align="center">
+									<br />
+									<p><i>But what if those buttons have a lot of text&hellip;</i></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="columns" align="center">
+									<!--[if (gte mso 9)|(IE)]>
+									<table width="100%">
+									<tr>
+									<td width="33%" valign="middle">
+									<![endif]-->
+									<div class="column-33-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->That won't be a problem<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td><td width="33%" valign="middle">
+									<![endif]-->
+									<div class="column-33-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Button text can stack<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+							<tr>
+								<td class="pad-10 white" align="center">
+									<br />
+									<p><i>Or you can adjust their columns to 50% width.</i></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="columns" align="center">
+									<!--[if (gte mso 9)|(IE)]>
+									<table width="100%">
+									<tr>
+									<td width="50%" valign="middle">
+									<![endif]-->
+									<div class="column-50-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->But wider columns&hellip;<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td><td width="50%" valign="middle">
+									<![endif]-->
+									<div class="column-50-fixed va-middle">
+										<table width="100%">
+											<tr>
+												<td align="center" class="pad-10">
+													<table align="center" class="button-table">
+														<tr>
+															<td class="button-td">
+																<a href="#" class="button-a">
+																	<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->&hellip;will stack sooner<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="fill-width" background="https://drive.google.com/uc?id=0B-JLgTBg6L1gbmJuOVR0LUJUVHc" bgcolor="#6c6c70" height="200" width="598" valign="middle">
+						<!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:598px;height:200px;">
+						<v:fill type="tile" src="https://drive.google.com/uc?id=0B-JLgTBg6L1gbmJuOVR0LUJUVHc" color="#6c6c70" />
+						<v:textbox inset="30px,0,-10px,0" style="v-text-anchor:middle;">
+						<![endif]-->
+						<table width="100%">
+							<tr>
+								<td class="fill-width pad-20">
+									<table width="100%">
+										<tr>
+											<td class="pad-10 white" align="center">
+												<p class="h3">This box has a background image and a <b>FIXED</b> height.</p>
+												<p><i>The background may repeat on small devices if there's too much content.</i></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!--[if gte mso 9]>
+						<p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+						</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20">
+						<table width="100%">
+							<tr>
+								<td class="pad-10">
+									<p class="h2">Hybrid cells</p>
+									<p><i>These fixed-width blocks will stack when there's not enough horizontal space. Because they're pixel-based instead of percentage-based, the fluidity of their size is limited to certain minimum and maximum widths. Because of this stacking for mobile devices, they've all be set to center alignment. CSS media queries are then added as a progressive enhancement for email clients that support it.</i></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20" bgcolor="#F7F7F7">
+						<table width="100%">
+							<tr>
+								<td class="pad-10" align="center">
+									<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gOXByc1dUNTJVRE0" alt="538px image" /></p>
+									<p class="h3">538 px (full-width, padded)</p>
+									<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" align="center">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column-50-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gaDBoVkpoLVEyRDQ" alt="259px image" /></p>
+													<p class="h3">259 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column-50-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gaDBoVkpoLVEyRDQ" alt="259px image" /></p>
+													<p class="h3">259 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" align="center" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="33.3%" valign="top">
+						<![endif]-->
+						<div class="column-33-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gZV95TXg4MHdtLW8" alt="166px image" /></p>
+													<p class="h3">166 px</p>
+													<p>Column 1</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="33.3%" valign="top">
+						<![endif]-->
+						<div class="column-33-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gZV95TXg4MHdtLW8" alt="166px image" /></p>
+													<p class="h3">166 px</p>
+													<p>Column 2</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="33.3%" valign="top">
+						<![endif]-->
+						<div class="column-33-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gZV95TXg4MHdtLW8" alt="166px image" /></p>
+													<p class="h3">166 px</p>
+													<p>Column 3</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" align="center">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gZV95TXg4MHdtLW8" alt="166px image" /></p>
+													<p class="h3">166 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="67%" valign="top">
+						<![endif]-->
+						<div class="column-67-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gaDR3NDNpU2M0aVk" alt="352px image" /></p>
+													<p class="h3">352 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="columns pad-20" align="center" bgcolor="#F7F7F7">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="67%" valign="top">
+						<![endif]-->
+						<div class="column-67-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gaDR3NDNpU2M0aVk" alt="352px image" /></p>
+													<p class="h3">352 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="33%" valign="top">
+						<![endif]-->
+						<div class="column-33-fixed">
+							<table width="100%">
+								<tr>
+									<td class="pad-10">
+										<table class="fill-width">
+											<tr>
+												<td align="center">
+													<p><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gZV95TXg4MHdtLW8" alt="166px image" /></p>
+													<p class="h3">166 px</p>
+													<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="fill-width pad-20">
+						<table width="100%">
+							<tr>
+								<td class="pad-10" align="center">
+									<a href="http://www.bandwidth.com/"><img src="https://drive.google.com/uc?id=0B-JLgTBg6L1gMm5oSGRCTWVXOVE" width="171" height="36" alt="Bandwidth logo" /></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</div>
+	</center>
+</body>
+</html>
+<!--! [html] -->
