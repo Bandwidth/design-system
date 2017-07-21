@@ -80,3 +80,12 @@
 .alert--text-only:before{
 	display:none;
 }
+.alert--close{
+	float: right;
+}
+.alert--close::after{
+	content: none;
+}
+.alert--close::after:hover{
+	content: "";
+}
