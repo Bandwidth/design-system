@@ -57,6 +57,17 @@ a.anchor-img:after {
 a.anchor-code:hover code {
     background-color: var(--bw-light-blue);
 }
+a.combo{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+a.combo:after{
+    background-color: rgba(255, 0, 0, 0.0);
+}
+a.combo:hover:after, a.combo:focus:after{
+    background: var(--bw-alternate-blue);
+    width: calc(100% + .8em);
+}
 .dark, .blue, .green, .red {
     padding: 10px;
 }
